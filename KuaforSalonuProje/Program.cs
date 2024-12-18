@@ -55,7 +55,7 @@ public class Program
         using (var scope = app.Services.CreateScope())
         {
             var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            RoleInitializer.SeedRolesAsync(roleManager).Wait();
+            /*RoleInitializer.SeedRolesAsync(roleManager).Wait();*/
         }
 
         // Uygulamanýn çalýþtýrýlmasý
