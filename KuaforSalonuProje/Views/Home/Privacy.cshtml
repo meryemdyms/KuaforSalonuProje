@@ -1,6 +1,46 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Hizmetler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container my-5">
+    <h1 class="text-center mb-4">Hizmetlerimiz</h1>
+    <div class="row">
+
+        <!-- Örnek Hizmet 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="~/images/sac-kesim.wbep" class="card-img-top" alt="Saç Kesimi">
+                <div class="card-body">
+                    <h5 class="card-title">Saç Kesimi</h5>
+                    <p class="card-text">Profesyonel saç kesimi hizmeti.</p>
+                    <p class="fw-bold">Fiyat: 250₺</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Örnek Hizmet 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="~/images/sac-boyama.jpg" class="card-img-top" alt="Saç Boyama">
+                <div class="card-body">
+                    <h5 class="card-title">Saç Boyama</h5>
+                    <p class="card-text">Kaliteli malzemelerle saç boyama.</p>
+                    <p class="fw-bold">Fiyat: 350₺</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Örnek Hizmet 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="~/images/manikur-pedikur.jpeg" class="card-img-top" alt="Manikür">
+                <div class="card-body">
+                    <h5 class="card-title">Manikür</h5>
+                    <p class="card-text">El ve tırnak bakım hizmeti.</p>
+                    <p class="fw-bold">Fiyat: 150₺</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
