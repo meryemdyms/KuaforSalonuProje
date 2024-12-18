@@ -23,5 +23,10 @@ namespace KuaforSalonuProje.Controllers
             var appointments = _context.Randevular.Where(r => r.KullaniciId.ToString() == user.Id).ToList();
             return View(appointments);
         }
+
+        public IActionResult UserPanel()
+        {
+            return View();
+        }
     }
 }

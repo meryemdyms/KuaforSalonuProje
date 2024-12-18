@@ -39,5 +39,10 @@ namespace KuaforSalonuProje.Controllers
             var appointments = _context.Randevular.ToList();
             return View(appointments);
         }
+
+        public IActionResult AdminPanel()
+        {
+            return View();
+        }
     }
 }

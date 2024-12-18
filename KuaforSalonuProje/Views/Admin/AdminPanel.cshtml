@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<h2>Admin Paneli</h2>
+
+<a href="@Url.Action("AddEmployee", "Admin")">Yeni Çalışan Ekle</a>
+<a href="@Url.Action("ManageAppointments", "Admin")">Randevuları Yönet</a>
+
+<h3>Çalışanlar</h3>
+<table class="table">
+    <tr>
+        <th>İsim</th>
+        <th>Görev</th>
+        <th>İşlemler</th>
+    </tr>
+    <!-- Çalışan listesi burada gösterilecek -->
+</table>
