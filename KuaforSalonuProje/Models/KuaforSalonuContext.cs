@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace KuaforSalonuProje.Models
 {
-    public class KuaforSalonuContext : DbContext
+    public class KuaforSalonuContext : IdentityDbContext<ApplicationUser>
     {
         public KuaforSalonuContext(DbContextOptions<KuaforSalonuContext> options) : base(options) { }
 

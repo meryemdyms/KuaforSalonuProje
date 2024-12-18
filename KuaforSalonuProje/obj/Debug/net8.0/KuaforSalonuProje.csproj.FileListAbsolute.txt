@@ -132,4 +132,5 @@ C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Deb
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.pdb
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.genruntimeconfig.cache
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\ref\KuaforSalonuProje.dll
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSa.B59A301C.Up2Date
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CopyComplete
