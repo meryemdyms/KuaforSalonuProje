@@ -1,8 +1,36 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Anasayfa";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Arka Plan Alanı -->
+<div class="bg-image-container">
+    <div class="overlay-content text-center">
+        <h1 class="display-4 text-white fw-bold">Kuaför Salonumuza Hoşgeldiniz</h1>
+        <p class="lead text-white">En iyi hizmet için buradayız. Kuaförümüz sizi bekliyor!</p>
+        <button class="btn btn-success btn-lg">Başla</button>
+    </div>
 </div>
+
+<!-- CSS Kodu -->
+<style>
+    .bg-image-container {
+        background-image: url('/images/kuafor.wbep'); /* Görselin yolu */
+        background-size: cover;
+        background-position: center;
+        height: 500px; /* Yükseklik ayarı */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .overlay-content {
+        background: rgba(0, 0, 0, 0.5); /* Arkaplan için siyah saydam katman */
+        padding: 2rem;
+        border-radius: 10px;
+    }
+
+    h1, p {
+        margin: 0; /* Varsayılan boşlukları kaldır */
+    }
+</style>
