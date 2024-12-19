@@ -3,123 +3,209 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - KuaforSalonuProje</title>
+    <title>Victoria Kuaför Salonu</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/KuaforSalonuProje.styles.css" asp-append-version="true" />
-    <style>
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-    </style>
-    
-    <!-- Buraya ekleyin -->
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f9f6f1;
         }
 
         .navbar {
-            background: linear-gradient(90deg, #FFF5EE, #FFF5EE);
-            color: white;
+            background: linear-gradient(90deg, #ffff, #ffff);
+            color: black;
         }
 
-        .navbar-brand, .nav-link {
+        .navbar-brand img {
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        .nav-link {
             color: black !important;
             font-weight: bold;
-            font-size:20px;
         }
 
             .nav-link:hover {
                 text-decoration: underline;
             }
 
-        .dropdown-menu {
+        .service-box {
+            border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .service-box:hover {
+                transform: translateY(-10px);
+            }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6a5acd;
+            margin-bottom: 15px;
+        }
+
+        .service-list li {
+            list-style: none;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .service-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-box {
+            flex: 1 1 30%;
+            min-width: 300px;
         }
 
         footer {
-            background: #FFF5EE;
-            color: white;
-            padding: 15px 0;
+            background-color: #ffff;
+            color: #6a5acd;
+            text-align: center;
+            padding: 60px 0;
         }
 
             footer a {
-                color: #00d4ff;
-            }
-
-        .btn-custom {
-            background: linear-gradient(90deg, #ff758c, #ff7eb3);
-            color: white;
-            font-weight: bold;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-        }
-
-            .btn-custom:hover {
-                background: linear-gradient(90deg, #ff7eb3, #ff758c);
+                color: #ffff;
+                text-decoration: none;
             }
     </style>
 </head>
+
+
+
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/image/logo.jpg" alt="Victoria Logo" style="height: 100px; margin-right: 100px;" />
-                 
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/image/logo.jpg" alt="Victoria Logo">
+                    Victoria Kuaför Salonu
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Hizmetler
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item" href="#">Saç Kesimi</a></li>
-                                <li><a class="dropdown-item" href="#">Saç Boyama</a></li>
-                                <li><a class="dropdown-item" href="#">Fön Çekimi</a></li>
-                            </ul>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="RandevuAl">Randevu Al</a>
+                            <a class="nav-link" href="#services">Hizmetler</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FotoYukle">Fotoğraf Yükle</a>
+                            <a class="nav-link" href="#contact">İletişim</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Giriş</a>
+                            <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login">Giriş</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    <div class="container mt-4">
+        @RenderBody()  <!-- Bu kısımda içerik render edilecek -->
     </div>
 
-    <footer class="border-top footer text-muted">
+    <div class="container mt-4">
+        <section id="services">
+            <h2 class="text-center mb-4">Hizmetlerimiz</h2>
+            <div class="service-row">
+                <!-- Saç Hizmetleri -->
+                <div class="service-box">
+                    <div class="service-title">Saç Hizmetleri</div>
+                    <ul class="service-list">
+                        <li>Saç Kesimi</li>
+                        <li>Fön ve Şekillendirme</li>
+                        <li>Saç Boyama</li>
+                        <li>Ombre, Sombre, Balyaj</li>
+                        <li>Keratin Bakımı</li>
+                        <li>Saç Kaynak</li>
+                        <li>Düğün ve Özel Gün Saç Tasarımları</li>
+                    </ul>
+                </div>
+                <!-- Cilt Bakım Hizmetleri -->
+                <div class="service-box">
+                    <div class="service-title">Cilt Bakım Hizmetleri</div>
+                    <ul class="service-list">
+                        <li>Cilt Bakımı</li>
+                    </ul>
+                </div>
+                <!-- Güzellik Hizmetleri -->
+                <div class="service-box">
+                    <div class="service-title">Güzellik Hizmetleri</div>
+                    <ul class="service-list">
+                        <li>Kaş Alma</li>
+                        <li>Kaş Şekillendirme ve Boyama</li>
+                        <li>Kirpik Lifting</li>
+                        <li>Takma Kirpik Uygulamaları</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <!-- Ağda ve Epilasyon Hizmetleri -->
+                <div class="service-box">
+                    <div class="service-title">Ağda ve Epilasyon Hizmetleri</div>
+                    <ul class="service-list">
+                        <li>Bölgesel Ağda</li>
+                        <li>Tüm Vücut Ağda</li>
+                        <li>Bölgesel Epilasyon</li>
+                        <li>Tüm Vücut Epilasyon</li>
+                    </ul>
+                </div>
+                <!-- Tırnak Bakım Hizmetleri -->
+                <div class="service-box">
+                    <div class="service-title">Tırnak Bakım Hizmetleri</div>
+                    <ul class="service-list">
+                        <li>Manikür ve Pedikür</li>
+                        <li>Protez Tırnak</li>
+                        <li>Nail Art ve Oje Uygulamaları</li>
+                    </ul>
+                </div>
+                <!-- Diğer Hizmetler -->
+                <div class="service-box">
+                    <div class="service-title">Diğer Hizmetler</div>
+                    <ul class="service-list">
+                        <li>Profesyonel Makyaj</li>
+                        <li>Günlük Makyaj</li>
+                        <li>Gelin Paketi (Saç, Makyaj)</li>
+                        <li>Saç ve Cilt Analizi</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+       
+    </div>
+
+    <footer>
         <div class="container">
-            &copy; 2024 - KuaforSalonuProje - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="contact-info">
+                <h4>İletişim Bilgileri</h4>
+                <p><strong>Adres:</strong> Lorem Ipsum Sokak No: 123, İstanbul</p>
+                <p><strong>Telefon:</strong> +90 555 555 5555</p>
+                <p><strong>E-posta:</strong> info@victoria.com</p>
+            </div>
+            <p>&copy; 2024 Victoria Kuaför Salonu. Tüm Hakları Saklıdır.</p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
