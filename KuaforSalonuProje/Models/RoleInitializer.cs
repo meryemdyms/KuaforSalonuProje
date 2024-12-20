@@ -6,7 +6,7 @@ namespace KuaforSalonuProje.Models
     {
         public static async Task SeedRolesAsync(RoleManager<IdentityRole> roleManager)
         {
-            string[] roleNames = { "Admin", "User", "Guest" }; // "Guest" rolünü ekledik
+            string[] roleNames = { "Admin", "User" }; 
 
             foreach (var roleName in roleNames)
             {

@@ -5,8 +5,8 @@
         public int KullaniciId { get; set; }  // Kullanıcı ID'si
         public string Adi { get; set; }  // Kullanıcı adı
         public string Soyadi { get; set; }  // Kullanıcı soyadı
-        public string Email { get; set; }  // Kullanıcı e-posta adresi
-        public string Telefon { get; set; }  // Kullanıcı telefonu
+        public string KullanıcıAd { get; set; }  // Kullanıcı e-posta adresi
+       
 
         public string Sifre { get; set; }
         public string Rol { get; set; }

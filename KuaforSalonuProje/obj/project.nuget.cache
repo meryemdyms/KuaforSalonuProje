@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ru3nhyrUXoDcPQq0g83TgEDcAmMmM/ZEtZyN4g5Q97GwzeoSXfC1F6SjKmps/wHxDubPPvlAblUmsXnXANstCw==",
+  "dgSpecHash": "fwEHVV/9InNmeBesB4qE8lpqPvo1Od98WrzgTwI30uETXGNfBtwne13EKQUAMtZ8wIRNpqYWf4pGgC2CJKlhLw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\KuaforSalonuProje.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.0\\microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
     "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.0\\microsoft.entityframeworkcore.design.9.0.0.nupkg.sha512",
     "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.0\\microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
+    "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.0\\microsoft.entityframeworkcore.tools.9.0.0.nupkg.sha512",
     "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0\\microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0\\microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",
     "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0\\microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",

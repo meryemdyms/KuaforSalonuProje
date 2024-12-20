@@ -138,6 +138,15 @@ C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\obj
 C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.pdb
 C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.genruntimeconfig.cache
 C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\ref\KuaforSalonuProje.dll
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.AssemblyReference.cache
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfoInputs.cache
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfo.cs
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CoreCompileInputs.cache
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cache
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cs
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.sourcelink.json
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\appsettings.json
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.staticwebassets.runtime.json
@@ -249,15 +258,6 @@ C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\bin\Deb
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.AssemblyReference.cache
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfoInputs.cache
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfo.cs
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CoreCompileInputs.cache
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cache
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cs
-C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.sourcelink.json
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.KuaforSalonuProje.Microsoft.AspNetCore.StaticWebAssets.props

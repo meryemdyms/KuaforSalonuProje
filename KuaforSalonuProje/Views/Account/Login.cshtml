@@ -2,7 +2,6 @@
     Layout = null;
 }
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,18 +54,18 @@
             font-size: 1.1rem;
         }
 
-        .btn-primary:hover {
-            background-color: #4e3b97;
-        }
+            .btn-primary:hover {
+                background-color: #4e3b97;
+            }
 
         .toggle-link {
             color: #6a5acd;
             cursor: pointer;
         }
 
-        .toggle-link:hover {
-            text-decoration: underline;
-        }
+            .toggle-link:hover {
+                text-decoration: underline;
+            }
     </style>
 </head>
 
@@ -88,17 +87,18 @@
 
             <div id="register-fields" style="display: none;">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Ad Soyad" required>
+                    <input type="text" class="form-control" placeholder="Ad" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="E-posta" required>
+                    <input type="text" class="form-control" placeholder="Soyad" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Kullanıcı adı" required>
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" placeholder="Şifre" required>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Telefon" required>
-                </div>
+
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Kayıt Ol</button>
                 </div>
@@ -132,6 +132,78 @@
                 toggleLink.textContent = 'Giriş Yap';
             }
         }
+
+        // Giriş formu gönderildiğinde çalışacak fonksiyon
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Sayfa yenilenmesini engeller
+
+            const kullaniciAd = document.querySelector('input[placeholder="Kullanıcı Adı"]').value;
+            const sifre = document.querySelector('input[placeholder="Şifre"]').value;
+
+            const loginData = {
+                KullaniciAd: kullaniciAd,
+                Sifre: sifre
+            };
+
+            // Giriş verilerini backend API'sine gönderme
+            fetch('/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(loginData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.redirectUrl) {
+                        window.location.href = data.redirectUrl; // Başarılı girişte yönlendirme
+                    } else {
+                        alert("Hata: " + data.message);
+                    }
+                })
+                .catch(error => console.error("Error: ", error));
+        });
+
+        // Kayıt formu gönderildiğinde çalışacak fonksiyon
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Sayfa yenilenmesini engeller
+
+            // Eğer "Kayıt Ol" formu görüntüleniyorsa
+            const registerFields = document.getElementById('register-fields');
+            if (registerFields.style.display === 'block') {
+                const adi = document.querySelector('input[placeholder="Ad"]').value;
+                const soyadi = document.querySelector('input[placeholder="Soyad"]').value;
+                const kullaniciAd = document.querySelector('input[placeholder="Kullanıcı adı"]').value;
+                const sifre = document.querySelector('input[placeholder="Şifre"]').value;
+
+                const registerData = {
+                    Adi: adi,
+                    Soyadi: soyadi,
+                    KullaniciAd: kullaniciAd,
+                    Sifre: sifre
+                };
+
+                // Kayıt verilerini backend API'sine gönderme
+                fetch('/api/auth/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(registerData)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert("Kayıt başarılı. Giriş yapabilirsiniz.");
+                            window.location.href = "/login"; // Başarıyla yönlendir
+                        } else {
+                            alert("Hata: " + data.message); // Hata mesajı
+                        }
+                    })
+                    .catch(error => console.error("Error: ", error));
+            }
+        });
+
     </script>
 </body>
 </html>

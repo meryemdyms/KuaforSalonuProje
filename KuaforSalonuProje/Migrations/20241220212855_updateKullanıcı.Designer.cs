@@ -3,6 +3,7 @@ using System;
 using KuaforSalonuProje.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace KuaforSalonuProje.Migrations
 {
     [DbContext(typeof(KuaforSalonuContext))]
-    partial class KuaforSalonuContextModelSnapshot : ModelSnapshot
+    [Migration("20241220212855_updateKullanıcı")]
+    partial class updateKullanıcı
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -165,7 +168,7 @@ namespace KuaforSalonuProje.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("KullanıcıAd")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("text");
 
