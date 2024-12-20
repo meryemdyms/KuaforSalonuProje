@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\image\\background.jpg",
+      "PackagePath": "staticwebassets\\image\\background.jpg"
+    },
+    {
       "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\image\\logo.jpg",
       "PackagePath": "staticwebassets\\image\\logo.jpg"
     },

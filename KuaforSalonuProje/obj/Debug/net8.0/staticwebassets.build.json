@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SUtVPZx59OKoQr/wQolXl/chZavpGui1k2GpW38tAiU=",
+  "Hash": "Meq9EyXpXDoszxQZPfGQsOrf2i+viO35ZrS5vpgoCbU=",
   "Source": "KuaforSalonuProje",
   "BasePath": "_content/KuaforSalonuProje",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\image\\background.jpg",
+      "SourceId": "KuaforSalonuProje",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\",
+      "BasePath": "_content/KuaforSalonuProje",
+      "RelativePath": "image/background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\background.jpg"
     },
     {
       "Identity": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\image\\logo.jpg",
