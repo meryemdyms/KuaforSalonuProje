@@ -274,3 +274,15 @@ C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Deb
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.genruntimeconfig.cache
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\ref\KuaforSalonuProje.dll
 C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CopyComplete
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.AssemblyReference.cache
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfoInputs.cache
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfo.cs
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CoreCompileInputs.cache
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cache
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cs
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.sourcelink.json
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.dll
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\refint\KuaforSalonuProje.dll
+C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.pdb

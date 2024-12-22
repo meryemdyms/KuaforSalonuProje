@@ -1,5 +1,9 @@
 ﻿using KuaforSalonuProje.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace KuaforSalonuProje.Controllers
 {
@@ -9,9 +13,8 @@ namespace KuaforSalonuProje.Controllers
     {
         private readonly UserService _userService;
         private readonly KuaforSalonuContext _context;
-        private KuaforSalonuContext context;
 
-        public AuthController(UserService userService)
+        public AuthController(UserService userService, KuaforSalonuContext context)
         {
             _userService = userService;
             _context = context;
@@ -47,22 +50,33 @@ namespace KuaforSalonuProje.Controllers
                 return BadRequest(new { message = "Bu kullanıcı adı zaten mevcut." });
             }
 
+            // Şifreyi hash'leyin
+            string hashedPassword = HashPassword(model.Sifre);
+
             // Yeni kullanıcı oluşturma
             var newUser = new Kullanici
             {
                 Adi = model.Adi,
                 Soyadi = model.Soyadi,
-                KullanıcıAd = model.KullaniciAd,
-                Sifre = model.Sifre, // Şifre burada hash edilmelidir
+                KullaniciAd = model.KullaniciAd,
+                Sifre = hashedPassword, // Şifre burada hash edilmiştir
                 Rol = "User" // Varsayılan rol
             };
 
-            _context.Kullanıcılar.Add(newUser);
+            _context.Kullanicilar.Add(newUser);
             _context.SaveChanges();
 
             return Ok(new { success = true });
         }
-    }
 
-   
+        // Şifreyi hash'leyen yardımcı metod
+        private string HashPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return Convert.ToBase64String(hashBytes);
+            }
+        }
+    }
 }

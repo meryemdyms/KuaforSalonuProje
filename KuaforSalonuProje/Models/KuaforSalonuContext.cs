@@ -5,6 +5,8 @@ namespace KuaforSalonuProje.Models
 {
     public class KuaforSalonuContext : IdentityDbContext<ApplicationUser>
     {
+        internal object Kullanicilar;
+
         public KuaforSalonuContext(DbContextOptions<KuaforSalonuContext> options) : base(options) { }
 
         public DbSet<Salon> Salonlar { get; set; }

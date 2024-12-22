@@ -14,5 +14,6 @@
 
         // Kullanıcının randevuları
         public ICollection<Randevu> Randevular { get; set; }
+        public string KullaniciAd { get; internal set; }
     }
 }
