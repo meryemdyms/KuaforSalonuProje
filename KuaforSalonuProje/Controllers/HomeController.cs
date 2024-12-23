@@ -23,26 +23,6 @@ namespace KuaforSalonuProje.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        public IActionResult Dashboard()
-        {
-            if (User.IsInRole(Roller.Admin))
-            {
-                return View("AdminDashboard");
-            }
-            else if (User.IsInRole(Roller.Kullanici))
-            {
-                return View("UserDashboard");
-            }
-            else
-            {
-                return View("GuestDashboard");
-            }
-        }
+       
     }
 }

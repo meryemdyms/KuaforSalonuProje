@@ -1,18 +1,30 @@
-﻿namespace KuaforSalonuProje.Models
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace KuaforSalonuProje.Models
 {
     public class Calisan
     {
-        public int CalisanId { get; set; }  // Çalışanın ID'si
-        public string Adi { get; set; }  // Çalışanın adı
-        public string Soyadi { get; set; }  // Çalışanın soyadı
-        public string UzmanlikAlani { get; set; }  // Çalışanın uzmanlık alanı
-        public int SalonId { get; set; }  // Hangi salonda çalıştığı (SalonId ile ilişkilendirme)
+        [Key]
+        public int CalisanId { get; set; }
 
-        // Çalışanın yaptığı randevular
+        [StringLength(50)]
+        public string CalisanAdi { get; set; }
+
+        [StringLength(50)]
+        public string CalisanSoyadi { get; set; }
+
+        [StringLength(50)]
+        public string UzmanlikAlani { get; set; }
+
+
         public ICollection<Randevu> Randevular { get; set; }
 
-        // Salonla ilişkili olması için
-        public Salon Salon { get; set; }
-    }
 
+    }
 }
