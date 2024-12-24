@@ -107,17 +107,18 @@
                             <input type="text" class="form-control" id="employeeName" required>
                         </div>
                         <div class="mb-3">
-                            <label for="specialization" class="form-label">Uzmanlık Alanı</label>
-                            <input type="text" class="form-control" id="specialization" required>
+                            <label for="employeeSurname" class="form-label">Çalışan Soyadı</label>
+                            <input type="text" class="form-control" id="employeeSurname" required>
                         </div>
                         <div class="mb-3">
-                            <label for="availability" class="form-label">Uygunluk Saatleri</label>
-                            <input type="text" class="form-control" id="availability" required>
+                            <label for="specialization" class="form-label">Uzmanlık Alanı</label>
+                            <input type="text" class="form-control" id="specialization" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Ekle</button>
                     </form>
                 </div>
             </div>
+
 
             <!-- Employee List -->
             <div class="card mt-4">
@@ -146,72 +147,44 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        let employees = [];
+        document.getElementById("employeeForm").addEventListener("submit", function (e) {
+            e.preventDefault();
 
-        // Add employee function
-        document.getElementById('employeeForm').addEventListener('submit', function (event) {
-            event.preventDefault();
+            const employeeName = document.getElementById("employeeName").value;
+            const employeeSurname = document.getElementById("employeeSurname").value;
+            const specialization = document.getElementById("specialization").value;
 
-            const name = document.getElementById('employeeName').value;
-            const specialization = document.getElementById('specialization').value;
-            const availability = document.getElementById('availability').value;
-
-            // Create new employee object
-            const newEmployee = {
-                id: employees.length + 1,
-                name: name,
-                specialization: specialization,
-                availability: availability
+            const employeeData = {
+                CalisanAdi: employeeName,
+                CalisanSoyadi: employeeSurname,
+                UzmanlikAlani: specialization
             };
 
-            // Add to employee list
-            employees.push(newEmployee);
-            displayEmployees();
+            console.log("Gönderilen veri:", employeeData); // Veriyi konsola yazdır
 
-            // Reset form
-            event.target.reset();
+            fetch('/Calisan/AddCalisan', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(employeeData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.message) {
+                        alert(data.message);
+                        document.getElementById("employeeForm").reset();
+                    } else if (data.errors) {
+                        console.error("Hatalar:", data.errors); // Sunucudan dönen hata mesajlarını konsola yazdır
+                    }
+                })
+                .catch(error => {
+                    console.error('Hata:', error);
+                    alert("Çalışan eklenirken bir hata oluştu.");
+                });
         });
 
-        // Display employees in the table
-        function displayEmployees() {
-            const employeeList = document.getElementById('employeeList');
-            employeeList.innerHTML = '';
-
-            employees.forEach((employee, index) => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                                                    <td>${employee.id}</td>
-                                                    <td>${employee.name}</td>
-                                                    <td>${employee.specialization}</td>
-                                                    <td>${employee.availability}</td>
-                                                    <td>
-                                                        <button class="btn btn-warning btn-sm" onclick="editEmployee(${employee.id})">Düzenle</button>
-                                                        <button class="btn btn-danger btn-sm" onclick="deleteEmployee(${employee.id})">Sil</button>
-                                                    </td>
-                                                `;
-                employeeList.appendChild(row);
-            });
-        }
-
-        // Edit employee
-        function editEmployee(id) {
-            const employee = employees.find(emp => emp.id === id);
-            document.getElementById('employeeName').value = employee.name;
-            document.getElementById('specialization').value = employee.specialization;
-            document.getElementById('availability').value = employee.availability;
-            deleteEmployee(id); // Delete the employee first, then allow update
-        }
-
-        // Delete employee
-        function deleteEmployee(id) {
-            employees = employees.filter(emp => emp.id !== id);
-            displayEmployees();
-        }
-
-        // Go to home page
-        function goHome() {
-            window.location.href = '/'; // Ana sayfaya yönlendirme
-        }
     </script>
+
 </body>
 </html>

@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f5f5f5; /* Pastel arka plan */
+            background-color: #f9f6f1; /* Açık pastel arka plan */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,7 +33,7 @@
             font-weight: bold;
             color: #ffffff; /* Beyaz renk */
             text-align: center;
-            background-color: #d085f4; /* Pastel mor arka plan */
+            background-color: #b8a896; /* Açık nötr bir ton */
             padding: 10px;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -43,17 +43,17 @@
             border-radius: 30px;
             margin-bottom: 15px;
             padding: 12px 20px;
-            border: 2px solid #d085f4;
+            border: 2px solid #b8a896; /* Form kenarları */
         }
 
             .form-group input:focus {
-                border-color: #9c59d8;
-                box-shadow: 0 0 8px rgba(156, 89, 216, 0.6);
+                border-color: #998a74;
+                box-shadow: 0 0 8px rgba(153, 138, 116, 0.6);
             }
 
         .btn-primary {
-            background-color: #d085f4;
-            border-color: #d085f4;
+            background-color: #b8a896;
+            border-color: #b8a896;
             border-radius: 30px;
             padding: 12px;
             font-size: 18px;
@@ -61,8 +61,8 @@
         }
 
             .btn-primary:hover {
-                background-color: #9c59d8;
-                border-color: #9c59d8;
+                background-color: #998a74;
+                border-color: #998a74;
             }
 
         .form-footer {
@@ -71,7 +71,7 @@
         }
 
             .form-footer a {
-                color: #d085f4;
+                color: #b8a896;
                 text-decoration: none;
             }
 
@@ -82,7 +82,7 @@
 </head>
 <body>
     <div class="form-container">
-        <h2 class="form-title">Kayıt Ol</h2>
+      
 
         @if (ViewBag.SuccessMessage != null)
         {

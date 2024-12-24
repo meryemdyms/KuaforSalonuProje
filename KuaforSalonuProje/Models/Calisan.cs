@@ -13,15 +13,16 @@ namespace KuaforSalonuProje.Models
         [Key]
         public int CalisanId { get; set; }
 
-        [StringLength(50)]
+        [Required(ErrorMessage = "Çalışan Adı zorunludur.")]
+        [StringLength(50, ErrorMessage = "Çalışan Adı en fazla 50 karakter olabilir.")]
         public string CalisanAdi { get; set; }
 
-        [StringLength(50)]
+        [Required(ErrorMessage = "Çalışan Soyadı zorunludur.")]
+        [StringLength(50, ErrorMessage = "Çalışan Soyadı en fazla 50 karakter olabilir.")]
         public string CalisanSoyadi { get; set; }
 
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Uzmanlık Alanı en fazla 50 karakter olabilir.")]
         public string UzmanlikAlani { get; set; }
-
 
         public ICollection<Randevu> Randevular { get; set; }
 
