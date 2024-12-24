@@ -9,14 +9,16 @@ namespace KuaforSalonuProje.Models
 {
     public class Hizmet
     {
-        [Key]
-        public int HizmetId { get; set; }
+        public int HizmetId { get; set; } // Primary Key
+        public string HizmetAdi { get; set; } // Hizmet adı
 
-        [StringLength(50)]
-        public string HizmetAdi { get; set; }
-        public double Ucret { get; set; }
-        public string Sure { get; set; }
+        public decimal Ucret { get; set; } // Ücret alanı
 
+        // Foreign Key
+        public int SalonId { get; set; }
 
+        // Navigation Property
+        public Salon Salon { get; set; } // Hizmetin bağlı olduğu salon
     }
+
 }

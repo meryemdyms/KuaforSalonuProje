@@ -34,7 +34,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/Meryem Duymuş/source/repos/KuaforSalonuProje/KuaforSalonuProje/Views/Account/Welcome.cshtml]
+=======
+[C:/Users/ayseg/Documents/GitHub/WebProje/KuaforSalonuProje/KuaforSalonuProje/KuaforSalonuProje/KuaforSalonuProje/Views/Account/UserDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2VyRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ayseg/Documents/GitHub/WebProje/KuaforSalonuProje/KuaforSalonuProje/KuaforSalonuProje/KuaforSalonuProje/Views/Account/Welcome.cshtml]
+>>>>>>> f14f14d0e0532795cc87c65a50e219854b1d210a
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxXZWxjb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
