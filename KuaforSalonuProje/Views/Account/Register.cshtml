@@ -1,0 +1,114 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Ol | Victoria Güzellik Salonu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Pastel arka plan */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .form-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffffff; /* Beyaz renk */
+            text-align: center;
+            background-color: #d085f4; /* Pastel mor arka plan */
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            border-radius: 30px;
+            margin-bottom: 15px;
+            padding: 12px 20px;
+            border: 2px solid #d085f4;
+        }
+
+            .form-group input:focus {
+                border-color: #9c59d8;
+                box-shadow: 0 0 8px rgba(156, 89, 216, 0.6);
+            }
+
+        .btn-primary {
+            background-color: #d085f4;
+            border-color: #d085f4;
+            border-radius: 30px;
+            padding: 12px;
+            font-size: 18px;
+            width: 100%;
+        }
+
+            .btn-primary:hover {
+                background-color: #9c59d8;
+                border-color: #9c59d8;
+            }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+            .form-footer a {
+                color: #d085f4;
+                text-decoration: none;
+            }
+
+                .form-footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-title">Kayıt Ol</h2>
+
+        @if (ViewBag.SuccessMessage != null)
+        {
+            <div class="alert alert-success">
+                @ViewBag.SuccessMessage
+            </div>
+        }
+
+        <form method="post" action="/Account/Register">
+            <div class="form-group">
+                <input type="text" name="Adi" class="form-control" placeholder="Adınız" required />
+            </div>
+            <div class="form-group">
+                <input type="text" name="Soyadi" class="form-control" placeholder="Soyadınız" required />
+            </div>
+            <div class="form-group">
+                <input type="email" name="KullaniciId" class="form-control" placeholder="E-posta" required />
+            </div>
+            <div class="form-group">
+                <input type="password" name="Sifre" class="form-control" placeholder="Şifre" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+        </form>
+        <div class="form-footer">
+            <p>Zaten bir hesabınız var mı? <a href="/Account/Login">Giriş Yap</a></p>
+        </div>
+    </div>
+</body>
+</html>
