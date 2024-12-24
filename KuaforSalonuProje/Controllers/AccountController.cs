@@ -125,5 +125,6 @@ namespace KuaforSalonuProje.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        
     }
 }
