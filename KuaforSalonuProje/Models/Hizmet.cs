@@ -14,11 +14,7 @@ namespace KuaforSalonuProje.Models
 
         public decimal Ucret { get; set; } // Ücret alanı
 
-        // Foreign Key
-        public int SalonId { get; set; }
-
-        // Navigation Property
-        public Salon Salon { get; set; } // Hizmetin bağlı olduğu salon
+      
     }
 
 }

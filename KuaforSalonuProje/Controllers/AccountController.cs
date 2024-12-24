@@ -66,15 +66,8 @@ namespace KuaforSalonuProje.Controllers
             return View();
         }
 
-<<<<<<< HEAD
-        
-=======
-        [HttpGet]
-        public IActionResult Register()
-        {
-            return View();
-        }
 
+       
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -110,7 +103,7 @@ namespace KuaforSalonuProje.Controllers
         }
 
 
->>>>>>> f14f14d0e0532795cc87c65a50e219854b1d210a
+
 
         // Giriş İşlemi
         [HttpPost]

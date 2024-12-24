@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r67S3J4VPOxDUE5XCUybMJcRXx5YonFOYrDWqJSlNNzgi7OL7xLCr57MMuk55UthP62mWG9oELc7H3lPuOfFeA==",
+  "dgSpecHash": "mTAJNojDkK7OdWq6u3q8di30RFzIlZ8nx9wkCo9KU2GDChAztrDdizQQaA1hwW9ExKHcy3B1MjW3glzOYpM1Jg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\KuaforSalonuProje.csproj",
+  "projectFilePath": "C:\\Users\\Meryem Duymuş\\OneDrive\\Desktop\\kopya\\KuaforSalonuProje\\KuaforSalonuProje\\KuaforSalonuProje.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
