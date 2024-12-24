@@ -1,0 +1,165 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Paneli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .sidebar {
+            height: 100vh;
+            background-color: #343a40;
+            color: #fff;
+            padding-top: 20px;
+        }
+
+            .sidebar a {
+                color: #fff;
+                padding: 10px 15px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .sidebar a:hover {
+                    background-color: #007bff;
+                }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar col-md-3">
+            <h4 class="text-center">Admin Paneli</h4>
+            <a href="#">Ana Sayfa</a>
+            <a href="#">Çalışan Yönetimi</a>
+            <a href="#">Randevu Yönetimi</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container-fluid col-md-9">
+            <h1 class="mt-3">Çalışan Yönetimi</h1>
+            <p>Çalışanları ekleyebilir, silebilir ve düzenleyebilirsiniz.</p>
+
+            <!-- Add New Employee Form -->
+            <div class="card">
+                <div class="card-header">
+                    <h5>Yeni Çalışan Ekle</h5>
+                </div>
+                <div class="card-body">
+                    <form id="employeeForm">
+                        <div class="mb-3">
+                            <label for="employeeName" class="form-label">Çalışan Adı</label>
+                            <input type="text" class="form-control" id="employeeName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="specialization" class="form-label">Uzmanlık Alanı</label>
+                            <input type="text" class="form-control" id="specialization" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="availability" class="form-label">Uygunluk Saatleri</label>
+                            <input type="text" class="form-control" id="availability" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Ekle</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Employee List -->
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h5>Çalışanlar</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Adı</th>
+                                <th scope="col">Uzmanlık Alanı</th>
+                                <th scope="col">Uygunluk Saatleri</th>
+                                <th scope="col">İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody id="employeeList">
+                            <!-- Employees will be listed here dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let employees = [];
+
+        // Add employee function
+        document.getElementById('employeeForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('employeeName').value;
+            const specialization = document.getElementById('specialization').value;
+            const availability = document.getElementById('availability').value;
+
+            // Create new employee object
+            const newEmployee = {
+                id: employees.length + 1,
+                name: name,
+                specialization: specialization,
+                availability: availability
+            };
+
+            // Add to employee list
+            employees.push(newEmployee);
+            displayEmployees();
+
+            // Reset form
+            event.target.reset();
+        });
+
+        // Display employees in the table
+        function displayEmployees() {
+            const employeeList = document.getElementById('employeeList');
+            employeeList.innerHTML = '';
+
+            employees.forEach((employee, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                            <td>${employee.id}</td>
+                            <td>${employee.name}</td>
+                            <td>${employee.specialization}</td>
+                            <td>${employee.availability}</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm" onclick="editEmployee(${employee.id})">Düzenle</button>
+                                <button class="btn btn-danger btn-sm" onclick="deleteEmployee(${employee.id})">Sil</button>
+                            </td>
+                        `;
+                employeeList.appendChild(row);
+            });
+        }
+
+        // Edit employee
+        function editEmployee(id) {
+            const employee = employees.find(emp => emp.id === id);
+            document.getElementById('employeeName').value = employee.name;
+            document.getElementById('specialization').value = employee.specialization;
+            document.getElementById('availability').value = employee.availability;
+            deleteEmployee(id); // Delete the employee first, then allow update
+        }
+
+        // Delete employee
+        function deleteEmployee(id) {
+            employees = employees.filter(emp => emp.id !== id);
+            displayEmployees();
+        }
+    </script>
+</body>
+</html>
