@@ -84,25 +84,35 @@
     <div class="form-container">
         <h2 class="form-title">Kayıt Ol</h2>
 
-        @if (ViewBag.SuccessMessage != null)
+        @if (TempData["SuccessMessage"] != null)
         {
-            <div class="alert alert-success">
-                @ViewBag.SuccessMessage
+            <div class="alert alert-success text-center">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger text-center">
+                Lütfen tüm alanları doğru doldurduğunuzdan emin olun.
             </div>
         }
 
         <form method="post" action="/Account/Register">
             <div class="form-group">
-                <input type="text" name="Adi" class="form-control" placeholder="Adınız" required />
+                <input type="text" name="FirstName" class="form-control" placeholder="Adınız" value="@Model?.FirstName" required />
             </div>
             <div class="form-group">
-                <input type="text" name="Soyadi" class="form-control" placeholder="Soyadınız" required />
+                <input type="text" name="LastName" class="form-control" placeholder="Soyadınız" value="@Model?.LastName" required />
             </div>
             <div class="form-group">
-                <input type="email" name="KullaniciId" class="form-control" placeholder="E-posta" required />
+                <input type="text" name="KullaniciAdi" class="form-control" placeholder="Kullanıcı Adı" required />
             </div>
             <div class="form-group">
-                <input type="password" name="Sifre" class="form-control" placeholder="Şifre" required />
+                <input type="password" name="Password" class="form-control" placeholder="Şifre" required />
+            </div>
+            <div class="form-group">
+                <input type="password" name="ConfirmPassword" class="form-control" placeholder="Şifreyi Onayla" required />
             </div>
             <button type="submit" class="btn btn-primary">Kayıt Ol</button>
         </form>

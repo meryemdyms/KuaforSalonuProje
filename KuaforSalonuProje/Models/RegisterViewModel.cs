@@ -10,9 +10,9 @@ namespace KuaforSalonuProje.Models
         [Required(ErrorMessage = "Soyad gerekli.")]
         public string LastName { get; set; }
 
-        [Required(ErrorMessage = "E-posta gerekli.")]
-        [EmailAddress(ErrorMessage = "Geçerli bir e-posta adresi girin.")]
-        public string Email { get; set; }
+        [Required(ErrorMessage = "Kullanıcı adı gerekli.")]
+        [StringLength(50, ErrorMessage = "Kullanıcı adı en fazla 50 karakter olabilir.")]
+        public string KullaniciAdi { get; set; }
 
         [Required(ErrorMessage = "Şifre gerekli.")]
         [DataType(DataType.Password)]
