@@ -7,27 +7,151 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giriş Yap | Victoria Kuaför Salonu</title>
+    <title>Giriş Yap | Victoria Güzellik Salonu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Güzellik salonuna uygun pastel arka plan */
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        .form-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffffff; /* Beyaz renk, mor zeminle uyumlu */
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #d085f4; /* Pastel mor arka plan */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .btn-group {
+            margin-bottom: 20px;
+        }
+        /* Admin ve Kullanıcı Butonları Kenar Çerçevesi */
+        .btn-outline-primary {
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-size: 16px;
+            border: 2px solid #d085f4; /* Mor kenarlık */
+            color: #d085f4;
+        }
+
+            .btn-outline-primary:hover {
+                background-color: #d085f4;
+                color: #fff;
+                border-color: #d085f4; /* Hover durumunda buton renk değiştirmesin */
+            }
+
+        .form-footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+            .form-footer a {
+                color: #d085f4;
+                text-decoration: none;
+            }
+
+                .form-footer a:hover {
+                    text-decoration: underline;
+                }
+
+        .form-group input {
+            border-radius: 30px;
+            margin-bottom: 15px; /* Alanlar arasına boşluk ekledim */
+            padding: 12px 20px; /* Giriş alanlarının içini genişlettim */
+            border: 2px solid #d085f4; /* Mor renkte sınır */
+        }
+
+            .form-group input:focus {
+                border-color: #9c59d8; /* Daha koyu mor odaklanınca */
+                box-shadow: 0 0 8px rgba(156, 89, 216, 0.6);
+            }
+
+        .btn-primary {
+            background-color: #d085f4; /* Mor buton arka planı */
+            border-color: #d085f4; /* Buton kenar rengi */
+            border-radius: 30px; /* Yuvarlatılmış buton */
+            padding: 12px;
+            font-size: 18px;
+        }
+
+            .btn-primary:hover {
+                background-color: #9c59d8; /* Daha koyu mor buton hover'da */
+                border-color: #9c59d8;
+            }
+
+        .btn-group .btn {
+            margin-right: 10px;
+        }
+
+            .btn-group .btn:last-child {
+                margin-right: 0; /* Son butonun sağında boşluk olmasın */
+            }
+    </style>
 </head>
 <body>
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="form-container">
-            <h2 class="form-title">Giriş Yap</h2>
+            <h2 class="form-title">Victoria Güzellik Salonu</h2>
+
             @if (ViewBag.Error != null)
             {
                 <div class="alert alert-danger">@ViewBag.Error</div>
             }
-            <form method="post" action="/Account/Login">
-                <div class="form-group mb-3">
-                    <input type="text" name="kullaniciAdi" class="form-control" placeholder="Kullanıcı Adı" required />
+
+            <!-- Admin ve Kullanıcı Seçimi -->
+            <div class="btn-group w-100" role="group" aria-label="Login Options">
+                <button type="button" class="btn btn-outline-primary w-50" data-bs-toggle="pill" data-bs-target="#adminLogin" aria-controls="adminLogin" aria-selected="true">Admin Girişi</button>
+                <button type="button" class="btn btn-outline-primary w-50" data-bs-toggle="pill" data-bs-target="#userLogin" aria-controls="userLogin" aria-selected="false">Kullanıcı Girişi</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Admin Girişi -->
+                <div class="tab-pane fade show active" id="adminLogin">
+                    <form method="post" action="/Account/Login">
+                        <div class="form-group">
+                            <input type="text" name="kullaniciAdi" class="form-control" placeholder="Kullanıcı Adı" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="sifre" class="form-control" placeholder="Şifre" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+                    </form>
                 </div>
-                <div class="form-group mb-3">
-                    <input type="password" name="sifre" class="form-control" placeholder="Şifre" required />
+
+                <!-- Kullanıcı Girişi -->
+                <div class="tab-pane fade" id="userLogin">
+                    <form method="post" action="/Account/UserLogin">
+                        <div class="form-group">
+                            <input type="text" name="kullaniciAdi" class="form-control" placeholder="Kullanıcı Adı" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="sifre" class="form-control" placeholder="Şifre" required />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+                    </form>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
-            </form>
+            </div>
+
+            <!-- Kayıt Olma Bağlantısı -->
+            <div class="form-footer">
+                <p>Hesabınız yok mu? <a href="/Account/Register">Kayıt Olun</a></p>
+            </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KuaforSalonuProje")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+536172c8e0bcdc5895e4691b9d7c0ec66f4336df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5d05412f7d6c73d3fdadc9a6273328fcfa11dfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("KuaforSalonuProje")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KuaforSalonuProje")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
