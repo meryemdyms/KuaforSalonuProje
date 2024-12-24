@@ -11,26 +11,73 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #f9f6f1; /* Arka plan rengi */
         }
 
         .sidebar {
             height: 100vh;
-            background-color: #343a40;
-            color: #fff;
+            background-color: #ffffff; /* Beyaz arka plan */
+            color: #333; /* Koyu gri yazı */
             padding-top: 20px;
+            border-right: 2px solid #ddd; /* Sağ kenar çizgisi */
         }
 
             .sidebar a {
-                color: #fff;
+                color: #333; /* Koyu gri metin */
                 padding: 10px 15px;
                 text-decoration: none;
                 display: block;
+                border-radius: 5px;
             }
 
                 .sidebar a:hover {
-                    background-color: #007bff;
+                    background-color: #ddd; /* Gri hover rengi */
                 }
+
+            .sidebar h4 {
+                text-align: center;
+                color: #333;
+                font-size: 24px;
+            }
+
+        .container-fluid {
+            margin-left: 10px; /* Sidebar'a biraz boşluk bırakıldı */
+            padding-left: 0; /* Container'da ekstra sol boşluk bırakmamak için */
+        }
+
+        .card-header {
+            background-color: #f0f0f0; /* Hafif gri başlık rengi */
+            color: #333;
+            font-weight: bold;
+        }
+
+        .card {
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: #ffffff; /* Beyaz card arka planı */
+            border: 1px solid #ddd; /* Hafif gri border */
+        }
+
+        .btn-primary {
+            background-color: #f0f0f0; /* Hafif gri buton */
+            border-color: #f0f0f0;
+            border-radius: 30px;
+            padding: 10px 20px;
+        }
+
+            .btn-primary:hover {
+                background-color: #ddd; /* Hoverda gri ton değişimi */
+                border-color: #ddd;
+            }
+
+        .table th, .table td {
+            padding: 15px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -38,7 +85,7 @@
         <!-- Sidebar -->
         <div class="sidebar col-md-3">
             <h4 class="text-center">Admin Paneli</h4>
-            <a href="#">Ana Sayfa</a>
+            <a href="#" onclick="goHome()">Ana Sayfa</a> <!-- Ana sayfaya yönlendirme -->
             <a href="#">Çalışan Yönetimi</a>
             <a href="#">Randevu Yönetimi</a>
         </div>
@@ -133,15 +180,15 @@
             employees.forEach((employee, index) => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                            <td>${employee.id}</td>
-                            <td>${employee.name}</td>
-                            <td>${employee.specialization}</td>
-                            <td>${employee.availability}</td>
-                            <td>
-                                <button class="btn btn-warning btn-sm" onclick="editEmployee(${employee.id})">Düzenle</button>
-                                <button class="btn btn-danger btn-sm" onclick="deleteEmployee(${employee.id})">Sil</button>
-                            </td>
-                        `;
+                                                    <td>${employee.id}</td>
+                                                    <td>${employee.name}</td>
+                                                    <td>${employee.specialization}</td>
+                                                    <td>${employee.availability}</td>
+                                                    <td>
+                                                        <button class="btn btn-warning btn-sm" onclick="editEmployee(${employee.id})">Düzenle</button>
+                                                        <button class="btn btn-danger btn-sm" onclick="deleteEmployee(${employee.id})">Sil</button>
+                                                    </td>
+                                                `;
                 employeeList.appendChild(row);
             });
         }
@@ -159,6 +206,11 @@
         function deleteEmployee(id) {
             employees = employees.filter(emp => emp.id !== id);
             displayEmployees();
+        }
+
+        // Go to home page
+        function goHome() {
+            window.location.href = '/'; // Ana sayfaya yönlendirme
         }
     </script>
 </body>
