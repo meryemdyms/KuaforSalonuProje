@@ -1,17 +1,12 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\kuafor.webp
-<<<<<<< HEAD
-wwwroot\images\resim.webp
-wwwroot\images\sac.jpg
-=======
 wwwroot\images\manikur.webp
 wwwroot\images\manikur-pedikur.jpg
 wwwroot\images\resim.webp
 wwwroot\images\sac.jpg
 wwwroot\images\sac-boyama.jpg
 wwwroot\images\sac-kesim.webp
->>>>>>> ac1ecd54773c6c033346a6da95c03baeea2d7eb7
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
