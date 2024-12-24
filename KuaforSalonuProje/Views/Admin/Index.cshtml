@@ -101,7 +101,7 @@
                     <h5>Yeni Çalışan Ekle</h5>
                 </div>
                 <div class="card-body">
-                    <form id="employeeForm">
+                    <form asp-action="AddCalisan" method="post">
                         <div class="mb-3">
                             <label for="employeeName" class="form-label">Çalışan Adı</label>
                             <input type="text" class="form-control" id="employeeName" required>
@@ -162,7 +162,7 @@
 
             console.log("Gönderilen veri:", employeeData); // Veriyi konsola yazdır
 
-            fetch('/Calisan/AddCalisan', {
+            fetch('/Admin/AddCalisan', {  // '/Calisan/AddCalisan' yerine '/Admin/AddCalisan' kullanılıyor
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -173,6 +173,7 @@
                 .then(data => {
                     if (data.message) {
                         alert(data.message);
+                        updateEmployeeList(data.calisanlar);  // Çalışanlar listesini güncelle
                         document.getElementById("employeeForm").reset();
                     } else if (data.errors) {
                         console.error("Hatalar:", data.errors); // Sunucudan dönen hata mesajlarını konsola yazdır
@@ -184,7 +185,9 @@
                 });
         });
 
+     
     </script>
+
 
 </body>
 </html>

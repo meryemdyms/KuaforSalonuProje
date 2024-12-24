@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using KuaforSalonuProje.Models;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace KuaforSalonuProje.Controllers
 {
@@ -13,12 +14,59 @@ namespace KuaforSalonuProje.Controllers
             _context = context;
         }
 
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(Kullanici kullanici)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    // Kullanıcı adı daha önce alınmış mı kontrol et
+                    var mevcutKullanici = await _context.Kullanicilar
+                        .FirstOrDefaultAsync(k => k.KullaniciAdi == kullanici.KullaniciAdi);
+
+                    if (mevcutKullanici != null)
+                    {
+                        ViewBag.Error = "Bu kullanıcı adı zaten alınmış.";
+                        return View();
+                    }
+
+                    // Kullanıcıyı veritabanına ekle
+                    _context.Add(kullanici);
+                    await _context.SaveChangesAsync();
+
+                    // Kayıt başarılı olduktan sonra giriş sayfasına yönlendir
+                    return RedirectToAction("Login", "Account");
+                }
+
+                catch (Exception ex)
+                {
+                    // Hata oluşursa hata mesajını göstermek için
+                    ViewBag.Error = "Kayıt sırasında bir hata oluştu: " + ex.Message;
+                    return View();
+                }
+            }
+
+            // Model geçersizse
+            ViewBag.Error = "Lütfen tüm alanları doğru şekilde doldurduğunuzdan emin olun.";
+            return View();
+        }
+
+
         // Giriş Sayfası
         [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
+
+        
 
         // Giriş İşlemi
         [HttpPost]
