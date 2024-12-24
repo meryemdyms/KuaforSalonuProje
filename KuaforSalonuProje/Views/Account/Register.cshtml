@@ -98,12 +98,12 @@
             </div>
         }
 
-        <form method="post" action="/Account/Register">
+        <form method="post" asp-action="Register" asp-controller="Account">
             <div class="form-group">
-                <input type="text" name="FirstName" class="form-control" placeholder="Adınız" value="@Model?.FirstName" required />
+                <input type="text" name="FirstName" class="form-control" placeholder="Adınız" required />
             </div>
             <div class="form-group">
-                <input type="text" name="LastName" class="form-control" placeholder="Soyadınız" value="@Model?.LastName" required />
+                <input type="text" name="LastName" class="form-control" placeholder="Soyadınız" required />
             </div>
             <div class="form-group">
                 <input type="text" name="KullaniciAdi" class="form-control" placeholder="Kullanıcı Adı" required />
@@ -116,6 +116,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Kayıt Ol</button>
         </form>
+
         <div class="form-footer">
             <p>Zaten bir hesabınız var mı? <a href="/Account/Login">Giriş Yap</a></p>
         </div>

@@ -20,6 +20,48 @@ namespace KuaforSalonuProje.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Register(RegisterViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model); // Model doğrulama başarısızsa formu tekrar göster
+            }
+
+            // Kullanıcı adı kontrolü
+            var mevcutKullanici = _context.Kullanicilar.FirstOrDefault(u => u.KullaniciAdi == model.KullaniciAdi);
+            if (mevcutKullanici != null)
+            {
+                ModelState.AddModelError("", "Bu kullanıcı adı zaten kullanılıyor.");
+                return View(model);
+            }
+
+            // Yeni kullanıcı oluştur
+            var yeniKullanici = new Kullanici
+            {
+                Adi = model.FirstName,
+                Soyadi = model.LastName,
+                KullaniciAdi = model.KullaniciAdi,
+                Sifre = model.Password
+            };
+
+            _context.Kullanicilar.Add(yeniKullanici);
+            _context.SaveChanges();
+
+            TempData["SuccessMessage"] = "Kayıt işlemi başarıyla tamamlandı.";
+            return RedirectToAction("Login");
+        }
+
+
+
         // Giriş İşlemi
         [HttpPost]
         public IActionResult Login(string kullaniciAdi, string sifre)
