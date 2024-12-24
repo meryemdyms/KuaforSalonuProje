@@ -44,8 +44,9 @@ namespace KuaforSalonuProje.Controllers
 
             if (kullanici != null)
             {
-                // Kullanıcı giriş başarılı, kullanıcı paneline yönlendir
-                return RedirectToAction("Index", "Home");
+                // Kullanıcı giriş başarılı, kullanıcı bilgilerini TempData'ya ekle
+                TempData["UserName"] = $"{kullanici.Adi} {kullanici.Soyadi}"; // Kullanıcı adı ve soyadı birleşimi
+                return RedirectToAction("Welcome", "Account"); // Welcome sayfasına yönlendir
             }
 
             // Giriş başarısız
@@ -53,47 +54,27 @@ namespace KuaforSalonuProje.Controllers
             return View();
         }
 
-        // Kayıt Sayfası
+        // Hoşgeldiniz Sayfası
         [HttpGet]
-        public IActionResult Register()
+        public IActionResult Welcome()
         {
+            if (TempData["UserName"] == null)
+            {
+                return RedirectToAction("Login"); // Kullanıcı adı yoksa Login sayfasına yönlendir
+            }
+
+            ViewBag.UserName = TempData["UserName"]; // Kullanıcı adı ve soyadı bilgisi
             return View();
         }
 
-        [HttpPost]
-
-        [HttpPost]
-        public IActionResult Register(RegisterViewModel model)
+        [HttpGet]
+        public IActionResult Logout()
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+            // Kullanıcının oturumunu sonlandırmak için TempData'yı temizleyebilirsiniz
+            TempData.Clear();
 
-            // Aynı kullanıcı adıyla başka bir kullanıcı olup olmadığını kontrol et
-            var mevcutKullanici = _context.Kullanicilar.FirstOrDefault(u => u.KullaniciAdi == model.Email);
-
-            if (mevcutKullanici != null)
-            {
-                ModelState.AddModelError("", "Bu kullanıcı adıyla zaten bir hesap mevcut.");
-                return View(model);
-            }
-
-            // Yeni kullanıcı ekle
-            var yeniKullanici = new Kullanici
-            {
-                Adi = model.FirstName,
-                Soyadi = model.LastName,
-                KullaniciAdi = model.Email,
-                Sifre = model.Password // NOT: Şifre hash'leme yapmanız önerilir
-            };
-
-            _context.Kullanicilar.Add(yeniKullanici);
-            _context.SaveChanges(); // Kullanıcı veritabanına kaydediliyor
-
-            // Başarılı kayıt sonrası mesaj göster ve giriş sayfasına yönlendir
-            ViewBag.SuccessMessage = "İşleminiz başarıyla gerçekleştirildi.";
-            return View("Register");
+            // Ana sayfaya yönlendir
+            return RedirectToAction("Index", "Home");
         }
 
     }
