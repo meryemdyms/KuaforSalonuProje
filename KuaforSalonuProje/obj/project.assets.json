@@ -4981,11 +4981,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Meryem Duymuş\\OneDrive\\Desktop\\kopya\\KuaforSalonuProje\\KuaforSalonuProje\\KuaforSalonuProje.csproj",
+      "projectUniqueName": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\KuaforSalonuProje.csproj",
       "projectName": "KuaforSalonuProje",
-      "projectPath": "C:\\Users\\Meryem Duymuş\\OneDrive\\Desktop\\kopya\\KuaforSalonuProje\\KuaforSalonuProje\\KuaforSalonuProje.csproj",
+      "projectPath": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\KuaforSalonuProje.csproj",
       "packagesPath": "C:\\Users\\Meryem Duymuş\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Meryem Duymuş\\OneDrive\\Desktop\\kopya\\KuaforSalonuProje\\KuaforSalonuProje\\obj\\",
+      "outputPath": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Meryem Duymuş\\AppData\\Roaming\\NuGet\\NuGet.Config",

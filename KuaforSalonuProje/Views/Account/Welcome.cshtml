@@ -90,45 +90,22 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Saç Kesimi</td>
-                        <td>100 TL</td>
-                        <td>30 dk</td>
-                        <td>Ahmet Yılmaz</td>
-                        <td>
-                            <form action="/Randevu/Olustur" method="post" class="d-inline">
-                                <input type="hidden" name="HizmetId" value="1" />
-                                <button type="submit" class="btn btn-success">Randevu Al</button>
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Boyama</td>
-                        <td>250 TL</td>
-                        <td>90 dk</td>
-                        <td>Elif Demir</td>
-                        <td>
-                            <form action="/Randevu/Olustur" method="post" class="d-inline">
-                                <input type="hidden" name="HizmetId" value="2" />
-                                <button type="submit" class="btn btn-success">Randevu Al</button>
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Manikür</td>
-                        <td>150 TL</td>
-                        <td>45 dk</td>
-                        <td>Zeynep Kaya</td>
-                        <td>
-                            <form action="/Randevu/Olustur" method="post" class="d-inline">
-                                <input type="hidden" name="HizmetId" value="3" />
-                                <button type="submit" class="btn btn-success">Randevu Al</button>
-                            </form>
-                        </td>
-                    </tr>
+                    @foreach (var hizmet in ViewBag.Hizmetler as List<KuaforSalonuProje.Models.Hizmet>)
+                    {
+                        <tr>
+                            <td>@hizmet.HizmetId</td>
+                            <td>@hizmet.HizmetAdi</td>
+                            <td>@hizmet.Ucret</td>
+                            <td>@hizmet.Sure</td> <!-- Süreyi dinamik olarak belirleyebilirsiniz -->
+                            <td>Ahmet Yılmaz</td> <!-- Hizmet veren kişiyi burada da dinamik yapabilirsiniz -->
+                            <td>
+                                <form action="/Randevu/Olustur" method="post" class="d-inline">
+                                    <input type="hidden" name="HizmetId" value="@hizmet.HizmetId" />
+                                    <button type="submit" class="btn btn-success">Randevu Al</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>

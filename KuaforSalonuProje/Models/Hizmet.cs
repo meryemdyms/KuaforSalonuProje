@@ -14,6 +14,10 @@ namespace KuaforSalonuProje.Models
 
         public decimal Ucret { get; set; } // Ücret alanı
 
+        public string Sure { get; set; }
+
+       
+
       
     }
 

@@ -149,9 +149,14 @@ namespace KuaforSalonuProje.Controllers
             }
 
             ViewBag.UserName = TempData["UserName"]; // Kullanıcı adı ve soyadı bilgisi
+
+            var hizmetler = _context.Hizmetler.ToList();
+            ViewBag.Hizmetler = hizmetler;
+
             return View();
         }
 
+       
         [HttpGet]
         public IActionResult Logout()
         {
