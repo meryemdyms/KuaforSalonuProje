@@ -5,7 +5,7 @@
 namespace KuaforSalonuProje.Migrations
 {
     /// <inheritdoc />
-    public partial class hizmetlerUpdate2 : Migration
+    public partial class Guncel : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -5,18 +5,24 @@
 namespace KuaforSalonuProje.Migrations
 {
     /// <inheritdoc />
-    public partial class AddHizmetlerVeri : Migration
+    public partial class hizmeler4 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.RenameColumn(
+                name: "sure",
+                table: "Hizmetler",
+                newName: "Sure");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.RenameColumn(
+                name: "Sure",
+                table: "Hizmetler",
+                newName: "sure");
         }
     }
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforSalonuProje.Migrations
 {
     [DbContext(typeof(KuaforContext))]
-    [Migration("20241225124219_hizmetlerSure")]
-    partial class hizmetlerSure
+    [Migration("20241225132633_UpdateCalisanValidation")]
+    partial class UpdateCalisanValidation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace KuaforSalonuProje.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("KuaforSalonuProje.Models.Admin", b =>
+            modelBuilder.Entity("Admin", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -35,11 +35,13 @@ namespace KuaforSalonuProje.Migrations
 
                     b.Property<string>("KullaniciAdi")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Sifre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -86,14 +88,15 @@ namespace KuaforSalonuProje.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Sure")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("SalonId")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("Ucret")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("HizmetId");
+
+                    b.HasIndex("SalonId");
 
                     b.ToTable("Hizmetler");
                 });
@@ -122,6 +125,9 @@ namespace KuaforSalonuProje.Migrations
                     b.Property<DateTime>("RandevuTarihi")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("SalonId")
+                        .HasColumnType("int");
+
                     b.Property<double>("ucret")
                         .HasColumnType("float");
 
@@ -131,7 +137,26 @@ namespace KuaforSalonuProje.Migrations
 
                     b.HasIndex("KullaniciId");
 
+                    b.HasIndex("SalonId");
+
                     b.ToTable("Randevular");
+                });
+
+            modelBuilder.Entity("KuaforSalonuProje.Models.Salon", b =>
+                {
+                    b.Property<int>("SalonId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SalonId"));
+
+                    b.Property<string>("SalonAdi")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SalonId");
+
+                    b.ToTable("Salon");
                 });
 
             modelBuilder.Entity("Kullanici", b =>
@@ -167,6 +192,17 @@ namespace KuaforSalonuProje.Migrations
                     b.ToTable("Kullanicilar");
                 });
 
+            modelBuilder.Entity("KuaforSalonuProje.Models.Hizmet", b =>
+                {
+                    b.HasOne("KuaforSalonuProje.Models.Salon", "Salon")
+                        .WithMany("Hizmetler")
+                        .HasForeignKey("SalonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Salon");
+                });
+
             modelBuilder.Entity("KuaforSalonuProje.Models.Randevu", b =>
                 {
                     b.HasOne("KuaforSalonuProje.Models.Calisan", "Calisan")
@@ -181,6 +217,10 @@ namespace KuaforSalonuProje.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("KuaforSalonuProje.Models.Salon", null)
+                        .WithMany("Randevular")
+                        .HasForeignKey("SalonId");
+
                     b.Navigation("Calisan");
 
                     b.Navigation("Kullanici");
@@ -188,6 +228,13 @@ namespace KuaforSalonuProje.Migrations
 
             modelBuilder.Entity("KuaforSalonuProje.Models.Calisan", b =>
                 {
+                    b.Navigation("Randevular");
+                });
+
+            modelBuilder.Entity("KuaforSalonuProje.Models.Salon", b =>
+                {
+                    b.Navigation("Hizmetler");
+
                     b.Navigation("Randevular");
                 });
 #pragma warning restore 612, 618

@@ -90,14 +90,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var hizmet in ViewBag.Hizmetler as List<KuaforSalonuProje.Models.Hizmet>)
+                    @foreach (var hizmet in ViewBag.Hizmetler)
                     {
                         <tr>
                             <td>@hizmet.HizmetId</td>
                             <td>@hizmet.HizmetAdi</td>
-                            <td>@hizmet.Ucret</td>
-                            <td>@hizmet.Sure</td> <!-- Süreyi dinamik olarak belirleyebilirsiniz -->
-                            <td>Ahmet Yılmaz</td> <!-- Hizmet veren kişiyi burada da dinamik yapabilirsiniz -->
+                            <td>@hizmet.Ucret TL</td>
+                            <td>@hizmet.Sure</td>
+                            <td>@hizmet.HizmetVeren</td>
                             <td>
                                 <form action="/Randevu/Olustur" method="post" class="d-inline">
                                     <input type="hidden" name="HizmetId" value="@hizmet.HizmetId" />

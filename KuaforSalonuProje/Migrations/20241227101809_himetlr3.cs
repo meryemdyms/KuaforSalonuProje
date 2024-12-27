@@ -5,25 +5,25 @@
 namespace KuaforSalonuProje.Migrations
 {
     /// <inheritdoc />
-    public partial class calisanSütunEkleme : Migration
+    public partial class himetlr3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "MusaitSaatler",
-                table: "Calisanlar",
+                name: "HizmetVeren",
+                table: "Hizmetler",
                 type: "nvarchar(max)",
                 nullable: false,
-                defaultValue: "[]");
+                defaultValue: "");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "MusaitSaatler",
-                table: "Calisanlar");
+                name: "HizmetVeren",
+                table: "Hizmetler");
         }
     }
 }

@@ -5,13 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KuaforSalonuProje.Models
+public class Admin
 {
-    public class Admin
-    {
-        [Key]
-        public int Id { get; set; }
-        public string KullaniciAdi {  get; set; }
-        public string Sifre {  get; set; }
-    }
+    [Key]
+    public int Id { get; set; }
+
+    [Required]
+    [StringLength(50)]
+    public string KullaniciAdi { get; set; }
+
+    [Required]
+    [StringLength(50)]
+    public string Sifre { get; set; }
 }

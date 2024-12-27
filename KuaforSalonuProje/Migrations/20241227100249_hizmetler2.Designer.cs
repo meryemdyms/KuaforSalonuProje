@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforSalonuProje.Migrations
 {
     [DbContext(typeof(KuaforContext))]
-    [Migration("20241224131741_calisanSütunEkleme")]
-    partial class calisanSütunEkleme
+    [Migration("20241227100249_hizmetler2")]
+    partial class hizmetler2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace KuaforSalonuProje.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("KuaforSalonuProje.Models.Admin", b =>
+            modelBuilder.Entity("Admin", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -35,11 +35,13 @@ namespace KuaforSalonuProje.Migrations
 
                     b.Property<string>("KullaniciAdi")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Sifre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -64,10 +66,6 @@ namespace KuaforSalonuProje.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.PrimitiveCollection<string>("MusaitSaatler")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("UzmanlikAlani")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -88,52 +86,18 @@ namespace KuaforSalonuProje.Migrations
 
                     b.Property<string>("HizmetAdi")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Sure")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Ucret")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Ucret")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("sure")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("HizmetId");
 
                     b.ToTable("Hizmetler");
-                });
-
-            modelBuilder.Entity("KuaforSalonuProje.Models.Kullanici", b =>
-                {
-                    b.Property<int>("KullaniciId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("KullaniciId"));
-
-                    b.Property<string>("Adi")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("KullaniciAdi")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Sifre")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("Soyadi")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("KullaniciId");
-
-                    b.ToTable("Kullanicilar");
                 });
 
             modelBuilder.Entity("KuaforSalonuProje.Models.Randevu", b =>
@@ -172,6 +136,39 @@ namespace KuaforSalonuProje.Migrations
                     b.ToTable("Randevular");
                 });
 
+            modelBuilder.Entity("Kullanici", b =>
+                {
+                    b.Property<int>("KullaniciId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("KullaniciId"));
+
+                    b.Property<string>("Adi")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("KullaniciAdi")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Sifre")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Soyadi")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("KullaniciId");
+
+                    b.ToTable("Kullanicilar");
+                });
+
             modelBuilder.Entity("KuaforSalonuProje.Models.Randevu", b =>
                 {
                     b.HasOne("KuaforSalonuProje.Models.Calisan", "Calisan")
@@ -180,8 +177,8 @@ namespace KuaforSalonuProje.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("KuaforSalonuProje.Models.Kullanici", "Kullanici")
-                        .WithMany("Randevular")
+                    b.HasOne("Kullanici", "Kullanici")
+                        .WithMany()
                         .HasForeignKey("KullaniciId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -192,11 +189,6 @@ namespace KuaforSalonuProje.Migrations
                 });
 
             modelBuilder.Entity("KuaforSalonuProje.Models.Calisan", b =>
-                {
-                    b.Navigation("Randevular");
-                });
-
-            modelBuilder.Entity("KuaforSalonuProje.Models.Kullanici", b =>
                 {
                     b.Navigation("Randevular");
                 });

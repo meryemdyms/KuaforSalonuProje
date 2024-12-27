@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using KuaforSalonuProje.Models;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
 
 namespace KuaforSalonuProje.Controllers
 {
@@ -14,51 +13,6 @@ namespace KuaforSalonuProje.Controllers
             _context = context;
         }
 
-        public IActionResult Register()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(Kullanici kullanici)
-        {
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    // Kullanıcı adı daha önce alınmış mı kontrol et
-                    var mevcutKullanici = await _context.Kullanicilar
-                        .FirstOrDefaultAsync(k => k.KullaniciAdi == kullanici.KullaniciAdi);
-
-                    if (mevcutKullanici != null)
-                    {
-                        ViewBag.Error = "Bu kullanıcı adı zaten alınmış.";
-                        return View();
-                    }
-
-                    // Kullanıcıyı veritabanına ekle
-                    _context.Add(kullanici);
-                    await _context.SaveChangesAsync();
-
-                    // Kayıt başarılı olduktan sonra giriş sayfasına yönlendir
-                    return RedirectToAction("Login", "Account");
-                }
-
-                catch (Exception ex)
-                {
-                    // Hata oluşursa hata mesajını göstermek için
-                    ViewBag.Error = "Kayıt sırasında bir hata oluştu: " + ex.Message;
-                    return View();
-                }
-            }
-
-            // Model geçersizse
-            ViewBag.Error = "Lütfen tüm alanları doğru şekilde doldurduğunuzdan emin olun.";
-            return View();
-        }
-
-
         // Giriş Sayfası
         [HttpGet]
         public IActionResult Login()
@@ -66,8 +20,12 @@ namespace KuaforSalonuProje.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
 
-       
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -101,7 +59,6 @@ namespace KuaforSalonuProje.Controllers
             TempData["SuccessMessage"] = "Kayıt işlemi başarıyla tamamlandı.";
             return RedirectToAction("Login");
         }
-
 
 
 
@@ -150,13 +107,27 @@ namespace KuaforSalonuProje.Controllers
 
             ViewBag.UserName = TempData["UserName"]; // Kullanıcı adı ve soyadı bilgisi
 
-            var hizmetler = _context.Hizmetler.ToList();
+            // Hizmetler ve Calisanları al
+            var hizmetler = _context.Hizmetler.ToList(); // Hizmetler tablosundaki tüm veriler
+            var calisanlar = _context.Calisanlar.ToList(); // Calisanlar tablosundaki tüm veriler
+
+            // Her hizmeti ve ilgili çalışanı eşleştir
+            foreach (var hizmet in hizmetler)
+            {
+                // Hizmet adı ile çalışan uzmanlık alanını eşleştir
+                var hizmetVeren = calisanlar.FirstOrDefault(c => c.UzmanlikAlani == hizmet.HizmetAdi);
+                if (hizmetVeren != null)
+                {
+                    hizmet.HizmetVeren = hizmetVeren.CalisanAdi + " " + hizmetVeren.CalisanSoyadi; // Hizmet verenin ismini ekle
+                }
+            }
+
+            // Hizmetleri View'a gönder
             ViewBag.Hizmetler = hizmetler;
 
             return View();
         }
 
-       
         [HttpGet]
         public IActionResult Logout()
         {
@@ -168,5 +139,7 @@ namespace KuaforSalonuProje.Controllers
         }
 
         
+
+
     }
 }

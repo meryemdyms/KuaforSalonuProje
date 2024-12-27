@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<KuaforSalonuProje.Models.Calisan>
+
+@{
     Layout = null;
 }
 
@@ -7,121 +9,114 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Paneli</title>
+    <title>Admin Paneli - Çalışan Yönetimi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f9f6f1; /* Arka plan rengi */
+            background-color: #f9f6f1;
         }
 
         .sidebar {
-            height: 100vh;
-            background-color: #ffffff; /* Beyaz arka plan */
-            color: #333; /* Koyu gri yazı */
-            padding-top: 20px;
-            border-right: 2px solid #ddd; /* Sağ kenar çizgisi */
+            background-color: #d8ccc1;
+            min-height: 100vh;
         }
 
+            .sidebar h4 {
+                color: #4a4a4a;
+            }
+
             .sidebar a {
-                color: #333; /* Koyu gri metin */
-                padding: 10px 15px;
-                text-decoration: none;
+                color: #4a4a4a;
                 display: block;
+                padding: 10px;
+                margin-bottom: 5px;
                 border-radius: 5px;
             }
 
                 .sidebar a:hover {
-                    background-color: #ddd; /* Gri hover rengi */
+                    background-color: #c1b3a4;
+                    text-decoration: none;
                 }
 
-            .sidebar h4 {
-                text-align: center;
-                color: #333;
-                font-size: 24px;
-            }
-
-        .container-fluid {
-            margin-left: 10px; /* Sidebar'a biraz boşluk bırakıldı */
-            padding-left: 0; /* Container'da ekstra sol boşluk bırakmamak için */
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .card-header {
-            background-color: #f0f0f0; /* Hafif gri başlık rengi */
-            color: #333;
-            font-weight: bold;
-        }
-
-        .card {
-            border-radius: 10px;
-            margin-bottom: 20px;
-            background-color: #ffffff; /* Beyaz card arka planı */
-            border: 1px solid #ddd; /* Hafif gri border */
+            background-color: #f1e9de;
+            border-bottom: 2px solid #d8ccc1;
         }
 
         .btn-primary {
-            background-color: #f0f0f0; /* Hafif gri buton */
-            border-color: #f0f0f0;
-            border-radius: 30px;
-            padding: 10px 20px;
+            background-color: #b89e87;
+            border-color: #b89e87;
         }
 
             .btn-primary:hover {
-                background-color: #ddd; /* Hoverda gri ton değişimi */
-                border-color: #ddd;
+                background-color: #a68872;
+                border-color: #a68872;
             }
 
-        .table th, .table td {
-            padding: 15px;
+        .btn-danger {
+            background-color: #d9534f;
+            border-color: #d43f3a;
         }
-
-        .form-label {
-            font-weight: bold;
-        }
-
     </style>
 </head>
 <body>
     <div class="d-flex">
         <!-- Sidebar -->
-        <div class="sidebar col-md-3">
-            <h4 class="text-center">Admin Paneli</h4>
-            <a href="#" onclick="goHome()">Ana Sayfa</a> <!-- Ana sayfaya yönlendirme -->
-            <a href="#">Çalışan Yönetimi</a>
-            <a href="#">Randevu Yönetimi</a>
+        <div class="sidebar col-md-3 p-3">
+            <h4>Admin Paneli</h4>
+            <a href="@Url.Action("Index", "Home")" class="text-decoration-none">Ana Sayfa</a>
+            <a href="@Url.Action("Index", "Admin")" class="text-decoration-none">Çalışan Yönetimi</a>
+           
         </div>
 
         <!-- Main Content -->
-        <div class="container-fluid col-md-9">
-            <h1 class="mt-3">Çalışan Yönetimi</h1>
-            <p>Çalışanları ekleyebilir, silebilir ve düzenleyebilirsiniz.</p>
+        <div class="container col-md-9 p-4">
+            <h2>Çalışan Yönetimi</h2>
 
-            <!-- Add New Employee Form -->
-            <div class="card">
+            <!-- Hata ve Başarı Mesajları -->
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+            }
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+            }
+
+            <!-- Yeni Çalışan Ekle -->
+            <div class="card mb-4">
                 <div class="card-header">
                     <h5>Yeni Çalışan Ekle</h5>
                 </div>
                 <div class="card-body">
-                    <form asp-action="AddCalisan" method="post">
+                    <form method="post" asp-action="YeniCalisanEkle" asp-controller="Admin">
                         <div class="mb-3">
-                            <label for="employeeName" class="form-label">Çalışan Adı</label>
-                            <input type="text" class="form-control" id="employeeName" required>
+                            <label for="CalisanAdi" class="form-label">Çalışan Adı</label>
+                            <input name="CalisanAdi" id="CalisanAdi" class="form-control" required />
                         </div>
                         <div class="mb-3">
-                            <label for="employeeSurname" class="form-label">Çalışan Soyadı</label>
-                            <input type="text" class="form-control" id="employeeSurname" required>
+                            <label for="CalisanSoyadi" class="form-label">Çalışan Soyadı</label>
+                            <input name="CalisanSoyadi" id="CalisanSoyadi" class="form-control" required />
                         </div>
                         <div class="mb-3">
-                            <label for="specialization" class="form-label">Uzmanlık Alanı</label>
-                            <input type="text" class="form-control" id="specialization" required>
+                            <label for="UzmanlikAlani" class="form-label">Uzmanlık Alanı</label>
+                            <input name="UzmanlikAlani" id="UzmanlikAlani" class="form-control" required />
                         </div>
                         <button type="submit" class="btn btn-primary">Ekle</button>
                     </form>
+
                 </div>
             </div>
 
-
-            <!-- Employee List -->
-            <div class="card mt-4">
+            <!-- Çalışan Listesi -->
+            <div class="card">
                 <div class="card-header">
                     <h5>Çalışanlar</h5>
                 </div>
@@ -129,65 +124,34 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Adı</th>
-                                <th scope="col">Uzmanlık Alanı</th>
-                                <th scope="col">Uygunluk Saatleri</th>
-                                <th scope="col">İşlemler</th>
+                                <th>#</th>
+                                <th>Adı</th>
+                                <th>Soyadı</th>
+                                <th>Uzmanlık Alanı</th>
+                                <th>İşlemler</th>
                             </tr>
                         </thead>
-                        <tbody id="employeeList">
-                            <!-- Employees will be listed here dynamically -->
+                        <tbody>
+                            @foreach (var calisan in Model)
+                            {
+                                <tr>
+                                    <td>@calisan.CalisanId</td>
+                                    <td>@calisan.CalisanAdi</td>
+                                    <td>@calisan.CalisanSoyadi</td>
+                                    <td>@calisan.UzmanlikAlani</td>
+                                    <td>
+                                        <form method="post" asp-action="CalisanSil" asp-controller="Admin">
+                                            <input type="hidden" name="id" value="@calisan.CalisanId" />
+                                            <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById("employeeForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            const employeeName = document.getElementById("employeeName").value;
-            const employeeSurname = document.getElementById("employeeSurname").value;
-            const specialization = document.getElementById("specialization").value;
-
-            const employeeData = {
-                CalisanAdi: employeeName,
-                CalisanSoyadi: employeeSurname,
-                UzmanlikAlani: specialization
-            };
-
-            console.log("Gönderilen veri:", employeeData); // Veriyi konsola yazdır
-
-            fetch('/Admin/AddCalisan', {  // '/Calisan/AddCalisan' yerine '/Admin/AddCalisan' kullanılıyor
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(employeeData)
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.message) {
-                        alert(data.message);
-                        updateEmployeeList(data.calisanlar);  // Çalışanlar listesini güncelle
-                        document.getElementById("employeeForm").reset();
-                    } else if (data.errors) {
-                        console.error("Hatalar:", data.errors); // Sunucudan dönen hata mesajlarını konsola yazdır
-                    }
-                })
-                .catch(error => {
-                    console.error('Hata:', error);
-                    alert("Çalışan eklenirken bir hata oluştu.");
-                });
-        });
-
-     
-    </script>
-
-
 </body>
 </html>

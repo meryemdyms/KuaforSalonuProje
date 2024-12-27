@@ -11,61 +11,67 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f9f6f1; /* Arka plan rengini belirledik */
+            background-color: #f9f6f1; /* Nötr pastel arka plan */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
         .form-container {
-            background-color: #ffffff; /* Formun arka planı beyaz */
+            background-color: #ffffff;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            max-width: 450px;
+            max-width: 400px;
             width: 100%;
         }
 
         .form-title {
             font-size: 28px;
             font-weight: bold;
-            color: #333333; /* Koyu gri renk */
-            margin-bottom: 20px;
+            color: #ffffff; /* Beyaz renk */
             text-align: center;
-            background-color: #f0f0f0; /* Hafif gri arka plan */
+            background-color: #d1c3b6; /* #f9f6f1'e uygun nötr bir ton */
             padding: 10px;
             border-radius: 10px;
+            margin-bottom: 20px;
         }
 
         .form-group input {
             border-radius: 30px;
             margin-bottom: 15px;
             padding: 12px 20px;
-            border: 2px solid #ccc;
+            border: 2px solid #d1c3b6; /* Nötr renk sınır */
         }
 
             .form-group input:focus {
-                border-color: #888;
-                box-shadow: 0 0 8px rgba(136, 136, 136, 0.6);
+                border-color: #b8a89a; /* Daha koyu ton odaklanınca */
+                box-shadow: 0 0 8px rgba(184, 168, 154, 0.6);
             }
 
         .btn-primary {
-            background-color: #ccc;
-            border-color: #ccc;
+            background-color: #d1c3b6; /* Nötr buton arka planı */
+            border-color: #d1c3b6; /* Buton kenar rengi */
             border-radius: 30px;
             padding: 12px;
             font-size: 18px;
+            width: 100%;
         }
 
             .btn-primary:hover {
-                background-color: #bbb;
-                border-color: #bbb;
+                background-color: #b8a89a; /* Daha koyu nötr buton hover'da */
+                border-color: #b8a89a;
             }
 
         .form-footer {
-            margin-top: 20px;
             text-align: center;
+            margin-top: 15px;
         }
 
             .form-footer a {
-                color: #333;
+                color: #d1c3b6;
                 text-decoration: none;
             }
 
@@ -75,39 +81,45 @@
     </style>
 </head>
 <body>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="form-container">
-            <h2 class="form-title">Kayıt Ol</h2>
+    <div class="form-container">
+        <h2 class="form-title">Kayıt Ol</h2>
 
-            @if (ViewBag.Error != null)
-            {
-                <div class="alert alert-danger">@ViewBag.Error</div>
-            }
-
-            <form method="post" action="/Account/Register">
-                <div class="form-group">
-                    <input type="text" name="Adi" class="form-control" placeholder="Adınız" required />
-                </div>
-                <div class="form-group">
-                    <input type="text" name="Soyadi" class="form-control" placeholder="Soyadınız" required />
-                </div>
-                <div class="form-group">
-                    <input type="text" name="KullaniciAdi" class="form-control" placeholder="Kullanıcı Adı" required />
-                </div>
-                <div class="form-group">
-                    <input type="password" name="Sifre" class="form-control" placeholder="Şifre" required />
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Kayıt Ol</button>
-            </form>
-
-
-            <div class="form-footer">
-                <p>Zaten hesabınız var mı? <a href="/Account/Login">Giriş Yap</a></p>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success text-center">
+                @TempData["SuccessMessage"]
             </div>
+        }
 
-        
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger text-center">
+                Lütfen tüm alanları doğru doldurduğunuzdan emin olun.
+            </div>
+        }
+
+        <form method="post" asp-action="Register" asp-controller="Account">
+            <div class="form-group">
+                <input type="text" name="FirstName" class="form-control" placeholder="Adınız" required />
+            </div>
+            <div class="form-group">
+                <input type="text" name="LastName" class="form-control" placeholder="Soyadınız" required />
+            </div>
+            <div class="form-group">
+                <input type="text" name="KullaniciAdi" class="form-control" placeholder="Kullanıcı Adı" required />
+            </div>
+            <div class="form-group">
+                <input type="password" name="Password" class="form-control" placeholder="Şifre" required />
+            </div>
+            <div class="form-group">
+                <input type="password" name="ConfirmPassword" class="form-control" placeholder="Şifreyi Onayla" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+        </form>
+
+        <div class="form-footer">
+            <p>Zaten bir hesabınız var mı? <a href="/Account/Login">Giriş Yap</a></p>
+        </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

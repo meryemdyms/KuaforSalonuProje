@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforSalonuProje.Migrations
 {
     [DbContext(typeof(KuaforContext))]
-    [Migration("20241224190351_second")]
-    partial class second
+    [Migration("20241227102143_hizmeler4")]
+    partial class hizmeler4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace KuaforSalonuProje.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("KuaforSalonuProje.Models.Admin", b =>
+            modelBuilder.Entity("Admin", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -35,11 +35,13 @@ namespace KuaforSalonuProje.Migrations
 
                     b.Property<string>("KullaniciAdi")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Sifre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -83,6 +85,14 @@ namespace KuaforSalonuProje.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HizmetId"));
 
                     b.Property<string>("HizmetAdi")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HizmetVeren")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sure")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

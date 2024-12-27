@@ -5,7 +5,7 @@
 namespace KuaforSalonuProje.Migrations
 {
     /// <inheritdoc />
-    public partial class addCalisan : Migration
+    public partial class UpdateHizmetlerDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

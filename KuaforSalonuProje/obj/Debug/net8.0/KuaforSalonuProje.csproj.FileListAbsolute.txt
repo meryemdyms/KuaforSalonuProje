@@ -658,175 +658,351 @@ C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\Kua
 C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSa.B59A301C.Up2Date
 C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.genruntimeconfig.cache
 C:\Users\ayseg\Documents\GitHub\WebProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\ref\KuaforSalonuProje.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.AssemblyReference.cache
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfoInputs.cache
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfo.cs
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CoreCompileInputs.cache
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cache
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cs
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.sourcelink.json
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\refint\KuaforSalonuProje.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.pdb
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\appsettings.json
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.staticwebassets.runtime.json
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.exe
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.deps.json
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.runtimeconfig.json
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.pdb
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Azure.Core.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Azure.Identity.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Humanizer.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Build.Locator.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Mono.TextTemplating.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Npgsql.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.ClientModel.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.CodeDom.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.Convention.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.Hosting.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.Runtime.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.TypedParts.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Drawing.Common.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Formats.Asn1.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.IO.Pipelines.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Memory.Data.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Runtime.Caching.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Text.Json.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Windows.Extensions.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.KuaforSalonuProje.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.build.KuaforSalonuProje.props
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.KuaforSalonuProje.props
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.KuaforSalonuProje.props
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\scopedcss\bundle\KuaforSalonuProje.styles.css
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\scopedcss\projectbundle\KuaforSalonuProje.bundle.scp.css
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CopyComplete
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.genruntimeconfig.cache
-C:\Users\Meryem Duymuş\OneDrive\Desktop\kopya\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\ref\KuaforSalonuProje.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\appsettings.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.staticwebassets.endpoints.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.staticwebassets.runtime.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.exe
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.deps.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.runtimeconfig.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.pdb
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Humanizer.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Npgsql.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.AssemblyReference.cache
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfoInputs.cache
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfo.cs
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CoreCompileInputs.cache
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cache
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cs
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.sourcelink.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\scopedcss\bundle\KuaforSalonuProje.styles.css
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\scopedcss\projectbundle\KuaforSalonuProje.bundle.scp.css
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.KuaforSalonuProje.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.KuaforSalonuProje.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.build.KuaforSalonuProje.props
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.KuaforSalonuProje.props
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.KuaforSalonuProje.props
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSa.B59A301C.Up2Date
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\refint\KuaforSalonuProje.dll
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.pdb
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.genruntimeconfig.cache
+C:\Users\ayseg\Desktop\3_Giris_Kavramlari_ve_Notasyon\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\ref\KuaforSalonuProje.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\appsettings.json
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.staticwebassets.runtime.json
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.exe
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.deps.json
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.runtimeconfig.json
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\KuaforSalonuProje.pdb
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Npgsql.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.AssemblyReference.cache
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfoInputs.cache
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.AssemblyInfo.cs
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CoreCompileInputs.cache
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cache
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.RazorAssemblyInfo.cs
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.sourcelink.json
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.KuaforSalonuProje.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.build.KuaforSalonuProje.props
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.KuaforSalonuProje.props
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.KuaforSalonuProje.props
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\scopedcss\bundle\KuaforSalonuProje.styles.css
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\scopedcss\projectbundle\KuaforSalonuProje.bundle.scp.css
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.csproj.CopyComplete
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\refint\KuaforSalonuProje.dll
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.pdb
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.genruntimeconfig.cache
+C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\ref\KuaforSalonuProje.dll

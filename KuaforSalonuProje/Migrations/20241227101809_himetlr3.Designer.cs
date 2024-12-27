@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforSalonuProje.Migrations
 {
     [DbContext(typeof(KuaforContext))]
-    [Migration("20241225131017_hizmetlerUpdate2")]
-    partial class hizmetlerUpdate2
+    [Migration("20241227101809_himetlr3")]
+    partial class himetlr3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace KuaforSalonuProje.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("KuaforSalonuProje.Models.Admin", b =>
+            modelBuilder.Entity("Admin", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -35,11 +35,13 @@ namespace KuaforSalonuProje.Migrations
 
                     b.Property<string>("KullaniciAdi")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Sifre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
@@ -86,12 +88,16 @@ namespace KuaforSalonuProje.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Sure")
+                    b.Property<string>("HizmetVeren")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Ucret")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("sure")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("HizmetId");
 
