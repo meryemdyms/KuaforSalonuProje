@@ -9,17 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f9f6f1;
+            color: #333;
         }
 
         .navbar {
-            background: linear-gradient(90deg, #ffff, #ffff);
-            color: black;
+            background: #fff;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
         }
 
         .navbar-brand img {
@@ -28,63 +27,70 @@
         }
 
         .nav-link {
-            color: black !important;
+            color: #333 !important;
             font-weight: bold;
         }
 
             .nav-link:hover {
+                color: #f9f6f1 !important;
                 text-decoration: underline;
             }
 
         .service-box {
+            background-color: #f9f6f1;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            background-color: #fff;
-            margin-bottom: 20px;
+            border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease;
         }
 
             .service-box:hover {
-                transform: translateY(-10px);
+                transform: translateY(-5px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
             }
 
-        .service-title {
-            font-size: 1.5rem;
+        .card-title {
+            color: #333;
             font-weight: bold;
-            color: #6a5acd;
-            margin-bottom: 15px;
+            font-size: 1.25rem;
         }
 
-        .service-list li {
-            list-style: none;
+        .list-unstyled li {
+            color: #555;
             font-size: 1rem;
-            margin-bottom: 10px;
-        }
-
-        .service-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .service-box {
-            flex: 1 1 30%;
-            min-width: 300px;
+            margin-bottom: 5px;
         }
 
         footer {
-            background-color: #ffff;
-            color: #6a5acd;
+            background-color: #f9f6f1;
+            color: #333;
             text-align: center;
             padding: 60px 0;
+            border-top: 2px solid #ddd;
         }
 
             footer a {
-                color: #ffff;
+                color: #333;
                 text-decoration: none;
             }
+
+                footer a:hover {
+                    color: #f9f6f1;
+                    text-decoration: underline;
+                }
+
+        h2.text-center {
+            color: #333;
+            font-weight: bold;
+        }
+
+        h4 {
+            color: #333;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 
@@ -93,7 +99,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/image/logo.jpg" alt="Victoria Logo">
+                    <img src="~/images/logo.jpg" alt="Victoria Logo">
                     Victoria Kuaför Salonu
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,74 +126,97 @@
     </header>
 
     <div class="container mt-4">
-        @RenderBody()  <!-- Bu kısımda içerik render edilecek -->
+        @RenderBody()
     </div>
 
     <div class="container mt-4">
         <section id="services">
             <h2 class="text-center mb-4">Hizmetlerimiz</h2>
-            <div class="service-row">
+            <div class="row">
                 <!-- Saç Hizmetleri -->
-                <div class="service-box">
-                    <div class="service-title">Saç Hizmetleri</div>
-                    <ul class="service-list">
-                        <li>Saç Kesimi</li>
-                        <li>Fön ve Şekillendirme</li>
-                        <li>Saç Boyama</li>
-                        <li>Ombre, Sombre, Balyaj</li>
-                        <li>Keratin Bakımı</li>
-                        <li>Saç Kaynak</li>
-                        <li>Düğün ve Özel Gün Saç Tasarımları</li>
-                    </ul>
+                <div class="col-md-4">
+                    <div class="card service-box">
+                        <div class="card-body">
+                            <h5 class="card-title">Saç Hizmetleri</h5>
+                            <ul class="list-unstyled">
+                                <li>Saç Kesimi</li>
+                                <li>Fön ve Şekillendirme</li>
+                                <li>Saç Boyama</li>
+                                <li>Ombre, Sombre, Balyaj</li>
+                                <li>Keratin Bakımı</li>
+                                <li>Saç Kaynak</li>
+                                <li>Düğün ve Özel Gün Saç Tasarımları</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <!-- Cilt Bakım Hizmetleri -->
-                <div class="service-box">
-                    <div class="service-title">Cilt Bakım Hizmetleri</div>
-                    <ul class="service-list">
-                        <li>Cilt Bakımı</li>
-                    </ul>
+                <!-- Cilt Bakımı -->
+                <div class="col-md-4">
+                    <div class="card service-box">
+                        <div class="card-body">
+                            <h5 class="card-title">Cilt Bakım Hizmetleri</h5>
+                            <ul class="list-unstyled">
+                                <li>Cilt Bakımı</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!-- Güzellik Hizmetleri -->
-                <div class="service-box">
-                    <div class="service-title">Güzellik Hizmetleri</div>
-                    <ul class="service-list">
-                        <li>Kaş Alma</li>
-                        <li>Kaş Şekillendirme ve Boyama</li>
-                        <li>Kirpik Lifting</li>
-                        <li>Takma Kirpik Uygulamaları</li>
-                    </ul>
+                <div class="col-md-4">
+                    <div class="card service-box">
+                        <div class="card-body">
+                            <h5 class="card-title">Güzellik Hizmetleri</h5>
+                            <ul class="list-unstyled">
+                                <li>Kaş Alma</li>
+                                <li>Kaş Şekillendirme ve Boyama</li>
+                                <li>Kirpik Lifting</li>
+                                <li>Takma Kirpik Uygulamaları</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="service-row">
-                <!-- Ağda ve Epilasyon Hizmetleri -->
-                <div class="service-box">
-                    <div class="service-title">Ağda ve Epilasyon Hizmetleri</div>
-                    <ul class="service-list">
-                        <li>Bölgesel Ağda</li>
-                        <li>Tüm Vücut Ağda</li>
-                        <li>Bölgesel Epilasyon</li>
-                        <li>Tüm Vücut Epilasyon</li>
-                    </ul>
+            <div class="row mt-4">
+                <!-- Ağda Hizmetleri -->
+                <div class="col-md-4">
+                    <div class="card service-box">
+                        <div class="card-body">
+                            <h5 class="card-title">Ağda ve Epilasyon Hizmetleri</h5>
+                            <ul class="list-unstyled">
+                                <li>Bölgesel Ağda</li>
+                                <li>Tüm Vücut Ağda</li>
+                                <li>Bölgesel Epilasyon</li>
+                                <li>Tüm Vücut Epilasyon</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <!-- Tırnak Bakım Hizmetleri -->
-                <div class="service-box">
-                    <div class="service-title">Tırnak Bakım Hizmetleri</div>
-                    <ul class="service-list">
-                        <li>Manikür ve Pedikür</li>
-                        <li>Protez Tırnak</li>
-                        <li>Nail Art ve Oje Uygulamaları</li>
-                    </ul>
+                <!-- Tırnak Bakımı -->
+                <div class="col-md-4">
+                    <div class="card service-box">
+                        <div class="card-body">
+                            <h5 class="card-title">Tırnak Bakım Hizmetleri</h5>
+                            <ul class="list-unstyled">
+                                <li>Manikür ve Pedikür</li>
+                                <li>Protez Tırnak</li>
+                                <li>Nail Art ve Oje Uygulamaları</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!-- Diğer Hizmetler -->
-                <div class="service-box">
-                    <div class="service-title">Diğer Hizmetler</div>
-                    <ul class="service-list">
-                        <li>Profesyonel Makyaj</li>
-                        <li>Günlük Makyaj</li>
-                        <li>Gelin Paketi (Saç, Makyaj)</li>
-                        <li>Saç ve Cilt Analizi</li>
-                    </ul>
+                <div class="col-md-4">
+                    <div class="card service-box">
+                        <div class="card-body">
+                            <h5 class="card-title">Diğer Hizmetler</h5>
+                            <ul class="list-unstyled">
+                                <li>Profesyonel Makyaj</li>
+                                <li>Günlük Makyaj</li>
+                                <li>Gelin Paketi (Saç, Makyaj)</li>
+                                <li>Saç ve Cilt Analizi</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -197,7 +226,7 @@
         <div class="container">
             <div class="contact-info">
                 <h4>İletişim Bilgileri</h4>
-                <p><strong>Adres:</strong> Lorem Ipsum Sokak No: 123, İstanbul</p>
+                <p><strong>Adres:</strong> Sakarya/Serdivan</p>
                 <p><strong>Telefon:</strong> +90 555 555 5555</p>
                 <p><strong>E-posta:</strong> info@victoria.com</p>
             </div>

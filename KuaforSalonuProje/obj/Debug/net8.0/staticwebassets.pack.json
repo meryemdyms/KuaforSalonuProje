@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\EkranGörüntüsü .jpg",
+      "PackagePath": "staticwebassets\\images\\EkranGörüntüsü .jpg"
+    },
+    {
       "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\kuafor.webp",
       "PackagePath": "staticwebassets\\images\\kuafor.webp"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
     },
     {
       "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\manikur-pedikur.jpg",
