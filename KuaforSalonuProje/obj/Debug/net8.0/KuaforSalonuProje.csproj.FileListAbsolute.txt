@@ -1006,3 +1006,4 @@ C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj
 C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.pdb
 C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\KuaforSalonuProje.genruntimeconfig.cache
 C:\Users\Meryem Duymuş\OneDrive\Desktop\KuaforSalonuProje\KuaforSalonuProje\obj\Debug\net8.0\ref\KuaforSalonuProje.dll
+C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje\bin\Debug\net8.0\Newtonsoft.Json.dll

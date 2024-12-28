@@ -5,16 +5,25 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Hosting;
+using System;
+using System.IO;
+using System.Threading.Tasks;
+using System.Text;
+using Newtonsoft.Json;
 
 namespace KuaforSalonuProje.Controllers
 {
     public class AccountController : Controller
     {
         private readonly KuaforContext _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public AccountController(KuaforContext context)
+        public AccountController(KuaforContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // Giriş Sayfası
@@ -29,7 +38,6 @@ namespace KuaforSalonuProje.Controllers
         {
             return View();
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -64,8 +72,6 @@ namespace KuaforSalonuProje.Controllers
             return RedirectToAction("Login");
         }
 
-
-
         [HttpPost]
         public async Task<IActionResult> Login(string kullaniciAdi, string sifre)
         {
@@ -91,11 +97,11 @@ namespace KuaforSalonuProje.Controllers
             {
                 // Kullanıcı giriş başarılı, oturum bilgilerini ayarla
                 var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, kullanici.KullaniciAdi),
-            new Claim("UserId", kullanici.KullaniciId.ToString()), // Kullanıcı ID'sini ekle
-            new Claim(ClaimTypes.Role, "Kullanici") // Kullanıcı rolü
-        };
+                {
+                    new Claim(ClaimTypes.Name, kullanici.KullaniciAdi),
+                    new Claim("UserId", kullanici.KullaniciId.ToString()), // Kullanıcı ID'sini ekle
+                    new Claim(ClaimTypes.Role, "Kullanici") // Kullanıcı rolü
+                };
 
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 var principal = new ClaimsPrincipal(identity);
@@ -110,7 +116,7 @@ namespace KuaforSalonuProje.Controllers
             ViewBag.Error = "Kullanıcı adı veya şifre hatalı.";
             return View();
         }
-        
+
         [HttpGet]
         public IActionResult Welcome()
         {
@@ -160,8 +166,6 @@ namespace KuaforSalonuProje.Controllers
             return View();
         }
 
-
-
         [HttpGet]
         public IActionResult Logout()
         {
@@ -171,6 +175,7 @@ namespace KuaforSalonuProje.Controllers
             // Ana sayfaya yönlendir
             return RedirectToAction("Index", "Home");
         }
+
         [HttpPost]
         public IActionResult RandevuOlustur(int HizmetId, DateTime Tarih, TimeSpan Saat)
         {
@@ -229,8 +234,7 @@ namespace KuaforSalonuProje.Controllers
                 ucret = (double)hizmet.Ucret,
                 CalisanId = calisan.CalisanId,
                 KullaniciId = kullanici.KullaniciId,
-                HizmetId = hizmet.HizmetId,
-               
+                HizmetId = hizmet.HizmetId
             };
 
             try
@@ -245,42 +249,75 @@ namespace KuaforSalonuProje.Controllers
             }
         }
 
-
-
-
-
-
-        public IActionResult KullaniciRandevulari()
+        [HttpPost]
+        public async Task<IActionResult> ProcessPhoto(IFormFile photo, [FromServices] IConfiguration configuration)
         {
-            if (!User.Identity.IsAuthenticated)
+            if (photo == null || photo.Length == 0)
             {
-                return Unauthorized("Kullanıcı oturum açmamış.");
+                return Json(new { success = false, message = "Lütfen bir fotoğraf yükleyin." });
             }
 
-            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "UserId");
-            if (userIdClaim == null)
+            try
             {
-                return Unauthorized("Kullanıcı kimlik bilgisi bulunamadı.");
-            }
+                // OpenAI API anahtarını tanımlayın
+                var apiKey = "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";
 
-            var kullaniciId = int.Parse(userIdClaim.Value);
-
-            var randevular = _context.Randevular
-                .Where(r => r.KullaniciId == kullaniciId)
-                .Select(r => new
+                if (string.IsNullOrEmpty(apiKey))
                 {
-                    r.IslemAdi,
-                    r.ucret,
-                    Tarih = r.RandevuTarihi.ToShortDateString(),
-                    Saat = r.RandevuTarihi.ToShortTimeString(),
-                    Calisan = r.Calisan.CalisanAdi + " " + r.Calisan.CalisanSoyadi
-                })
-                .ToList();
+                    return Json(new { success = false, message = "API anahtarı bulunamadı." });
+                }
 
-            return View(randevular);
+                // Fotoğrafı geçici olarak kaydet
+                var filePath = Path.Combine(Path.GetTempPath(), photo.FileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await photo.CopyToAsync(stream);
+                }
+
+                // OpenAI API'ye istek yap
+                using (var client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
+
+                    // GPT modeline metinsel açıklama gönderme
+                    var content = new StringContent(JsonConvert.SerializeObject(new
+                    {
+                        model = "gpt-3.5-turbo", // Güncel model
+                        messages = new[]
+                        {
+                    new { role = "system", content = "Bir kişinin fotoğrafına göre saç modeli önerileri üret." },
+                    new { role = "user", content = "Örnek saç modeli önerilerini listele." }
+                },
+                        max_tokens = 200,
+                        temperature = 0.7
+                    }), Encoding.UTF8, "application/json");
+
+                    var response = await client.PostAsync("https://api.openai.com/v1/chat/completions", content);
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        var errorResponse = await response.Content.ReadAsStringAsync();
+                        return Json(new { success = false, message = $"API çağrısı başarısız: {errorResponse}" });
+                    }
+
+                    var jsonResponse = await response.Content.ReadAsStringAsync();
+                    var result = JsonConvert.DeserializeObject<dynamic>(jsonResponse);
+                    var suggestions = ((IEnumerable<dynamic>)result.choices)
+                        .Select(choice => (string)choice.message.content)
+                        .Where(text => !string.IsNullOrWhiteSpace(text))
+                        .ToList();
+
+                    return Json(new { success = true, suggestions });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = $"Bir hata oluştu: {ex.Message}" });
+            }
         }
 
 
-    }
 
+
+    }
 }

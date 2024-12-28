@@ -139,6 +139,18 @@
                 margin-top: 10px;
                 color: #6c757d;
             }
+
+        .suggestions {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+            .suggestions img {
+                max-width: 150px;
+                margin: 10px;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
     </style>
 </head>
 <body>
@@ -158,7 +170,7 @@
             <div id="home" class="card active welcome-card">
                 <h3>Hoşgeldiniz, @ViewBag.UserName!</h3>
                 <p>Kullanıcı paneline hoş geldiniz. Hizmetler veya randevularınız için menüyü kullanabilirsiniz. Güzellik salonumuzdaki hizmetlerden faydalanmak için randevunuzu kolayca alabilirsiniz.</p>
-                
+
             </div>
 
             <!-- Randevular -->
@@ -265,6 +277,9 @@
                         <input type="file" id="uploadPhoto" accept="image/*" />
                         <p>Fotoğraf yükleyerek saç modeli veya rengi önerileri alın.</p>
                         <button class="btn btn-primary mt-2" id="processPhoto">İşle</button>
+                        <div class="suggestions" id="suggestions">
+                            <p>Yapay zeka önerileri burada görünecek.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,15 +299,47 @@
 
             $("#processPhoto").on("click", function () {
                 const fileInput = document.getElementById("uploadPhoto");
-                if (fileInput.files.length === 0) {
-                    alert("Lütfen bir fotoğraf seçin.");
-                    return;
-                }
+                const formData = new FormData();
+                formData.append("photo", fileInput.files[0]);
 
-                // TODO: Fotoğrafı backend'e gönderme işlemi
-                alert("Fotoğraf başarıyla yüklendi ve işleniyor...");
+                // İşleme sırasında buton durumu
+                $("#processPhoto").text("İşleniyor...").prop("disabled", true);
+
+                // Yapay zeka API çağrısı
+                $.ajax({
+                    url: "/Account/ProcessPhoto",
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        $("#processPhoto").text("İşle").prop("disabled", false);
+                        if (response.success) {
+                            const suggestionsContainer = $("#suggestions");
+                            suggestionsContainer.empty(); // Eski içerikleri temizle
+
+                            // Yeni önerileri metin olarak ekle
+                            if (response.suggestions && response.suggestions.length > 0) {
+                                response.suggestions.forEach((suggestion) => {
+                                    const p = `<p>${suggestion}</p>`;
+                                    suggestionsContainer.append(p);
+                                });
+                            } else {
+                                suggestionsContainer.append("<p>Maalesef, saç modeli önerisi bulunamadı.</p>");
+                            }
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function () {
+                        $("#processPhoto").text("İşle").prop("disabled", false);
+                        alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+                    },
+                });
             });
         });
+
+
     </script>
 </body>
 </html>

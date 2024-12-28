@@ -13,16 +13,8 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\EkranGörüntüsü .jpg",
-      "PackagePath": "staticwebassets\\images\\EkranGörüntüsü .jpg"
-    },
-    {
       "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\kuafor.webp",
       "PackagePath": "staticwebassets\\images\\kuafor.webp"
-    },
-    {
-      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\logo.jpg",
-      "PackagePath": "staticwebassets\\images\\logo.jpg"
     },
     {
       "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\manikur-pedikur.jpg",
@@ -41,12 +33,12 @@
       "PackagePath": "staticwebassets\\images\\sac-boyama.jpg"
     },
     {
-      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\sac-kesim.webp",
-      "PackagePath": "staticwebassets\\images\\sac-kesim.webp"
-    },
-    {
       "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\sac.jpg",
       "PackagePath": "staticwebassets\\images\\sac.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\images\\sac_modeli1.jpg",
+      "PackagePath": "staticwebassets\\images\\sac_modeli1.jpg"
     },
     {
       "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\js\\site.js",
@@ -279,6 +271,42 @@
     {
       "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\uploads\\0e526ac6-0c6c-4f48-8459-4a05c29b7ba1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\0e526ac6-0c6c-4f48-8459-4a05c29b7ba1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\uploads\\2b037013-9e57-492a-b7ca-9c904d90af5c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2b037013-9e57-492a-b7ca-9c904d90af5c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\uploads\\65820f0a-6fbe-4c7e-93b1-1fadd4c70fe6.webp",
+      "PackagePath": "staticwebassets\\uploads\\65820f0a-6fbe-4c7e-93b1-1fadd4c70fe6.webp"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\uploads\\687d8556-5485-4f1f-8cde-d2193f5f214b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\687d8556-5485-4f1f-8cde-d2193f5f214b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\uploads\\80e09f8d-9e9c-4d16-b272-5dae539b31f5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\80e09f8d-9e9c-4d16-b272-5dae539b31f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\uploads\\8d5bb4fe-4611-45ad-a840-3e49ab8445b6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8d5bb4fe-4611-45ad-a840-3e49ab8445b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\uploads\\a2472438-cfd7-4e62-868c-e0b44c263a88.webp",
+      "PackagePath": "staticwebassets\\uploads\\a2472438-cfd7-4e62-868c-e0b44c263a88.webp"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\uploads\\bb86e228-ff41-4a9b-8b96-67400b8b33ff.webp",
+      "PackagePath": "staticwebassets\\uploads\\bb86e228-ff41-4a9b-8b96-67400b8b33ff.webp"
+    },
+    {
+      "Id": "C:\\Users\\Meryem Duymuş\\source\\repos\\KuaforSalonuProje\\KuaforSalonuProje\\wwwroot\\uploads\\ffb4d78f-da5b-48b0-83da-2d70d49f46ef.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ffb4d78f-da5b-48b0-83da-2d70d49f46ef.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KuaforSalonuProje.Microsoft.AspNetCore.StaticWebAssets.props",
