@@ -17,9 +17,9 @@ namespace KuaforSalonuProje.Models
         public string Sure { get; set; }
         public string HizmetVeren {  get; set; }
 
-       
 
-      
+        public ICollection<Randevu>? Randevular { get; set; }
+
     }
 
 }

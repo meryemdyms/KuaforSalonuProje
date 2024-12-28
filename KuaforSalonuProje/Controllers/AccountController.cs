@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using KuaforSalonuProje.Models;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 namespace KuaforSalonuProje.Controllers
 {
@@ -62,9 +66,8 @@ namespace KuaforSalonuProje.Controllers
 
 
 
-        // Giriş İşlemi
         [HttpPost]
-        public IActionResult Login(string kullaniciAdi, string sifre)
+        public async Task<IActionResult> Login(string kullaniciAdi, string sifre)
         {
             if (string.IsNullOrEmpty(kullaniciAdi) || string.IsNullOrEmpty(sifre))
             {
@@ -86,47 +89,77 @@ namespace KuaforSalonuProje.Controllers
 
             if (kullanici != null)
             {
-                // Kullanıcı giriş başarılı, kullanıcı bilgilerini TempData'ya ekle
-                TempData["UserName"] = $"{kullanici.Adi} {kullanici.Soyadi}"; // Kullanıcı adı ve soyadı birleşimi
-                return RedirectToAction("Welcome", "Account"); // Welcome sayfasına yönlendir
+                // Kullanıcı giriş başarılı, oturum bilgilerini ayarla
+                var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, kullanici.KullaniciAdi),
+            new Claim("UserId", kullanici.KullaniciId.ToString()), // Kullanıcı ID'sini ekle
+            new Claim(ClaimTypes.Role, "Kullanici") // Kullanıcı rolü
+        };
+
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
+
+                // Oturum aç
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+                return RedirectToAction("Welcome", "Account");
             }
 
             // Giriş başarısız
             ViewBag.Error = "Kullanıcı adı veya şifre hatalı.";
             return View();
         }
-
-        // Hoşgeldiniz Sayfası
+        [HttpGet]
         [HttpGet]
         public IActionResult Welcome()
         {
-            if (TempData["UserName"] == null)
+            if (!User.Identity.IsAuthenticated)
             {
-                return RedirectToAction("Login"); // Kullanıcı adı yoksa Login sayfasına yönlendir
+                return RedirectToAction("Login", "Account");
             }
 
-            ViewBag.UserName = TempData["UserName"]; // Kullanıcı adı ve soyadı bilgisi
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "UserId");
+            if (userIdClaim == null)
+            {
+                return Unauthorized("Kullanıcı kimlik bilgisi bulunamadı.");
+            }
 
-            // Hizmetler ve Calisanları al
-            var hizmetler = _context.Hizmetler.ToList(); // Hizmetler tablosundaki tüm veriler
-            var calisanlar = _context.Calisanlar.ToList(); // Calisanlar tablosundaki tüm veriler
+            var kullaniciId = int.Parse(userIdClaim.Value);
 
-            // Her hizmeti ve ilgili çalışanı eşleştir
+            // Kullanıcıya ait randevular
+            var randevular = _context.Randevular
+                .Where(r => r.KullaniciId == kullaniciId)
+                .Select(r => new
+                {
+                    r.IslemAdi,
+                    r.ucret,
+                    Tarih = r.RandevuTarihi.ToShortDateString(),
+                    Saat = r.RandevuTarihi.ToShortTimeString(),
+                    Calisan = r.Calisan.CalisanAdi + " " + r.Calisan.CalisanSoyadi
+                })
+                .ToList<dynamic>();
+
+            // Hizmetler
+            var hizmetler = _context.Hizmetler.ToList();
+            var calisanlar = _context.Calisanlar.ToList();
+
             foreach (var hizmet in hizmetler)
             {
-                // Hizmet adı ile çalışan uzmanlık alanını eşleştir
                 var hizmetVeren = calisanlar.FirstOrDefault(c => c.UzmanlikAlani == hizmet.HizmetAdi);
-                if (hizmetVeren != null)
-                {
-                    hizmet.HizmetVeren = hizmetVeren.CalisanAdi + " " + hizmetVeren.CalisanSoyadi; // Hizmet verenin ismini ekle
-                }
+                hizmet.HizmetVeren = hizmetVeren != null
+                    ? hizmetVeren.CalisanAdi + " " + hizmetVeren.CalisanSoyadi
+                    : "Uygun çalışan bulunamadı";
             }
 
-            // Hizmetleri View'a gönder
+            ViewBag.Randevular = randevular;
             ViewBag.Hizmetler = hizmetler;
+            ViewBag.UserName = User.Identity.Name;
 
             return View();
         }
+
+
 
         [HttpGet]
         public IActionResult Logout()
@@ -137,9 +170,115 @@ namespace KuaforSalonuProje.Controllers
             // Ana sayfaya yönlendir
             return RedirectToAction("Index", "Home");
         }
+        [HttpPost]
+        public IActionResult RandevuOlustur(int HizmetId, DateTime Tarih, TimeSpan Saat)
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Json(new { success = false, message = "Kullanıcı oturum açmamış." });
+            }
 
-        
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "UserId");
+            if (userIdClaim == null)
+            {
+                return Json(new { success = false, message = "Kullanıcı kimlik bilgisi bulunamadı." });
+            }
+
+            var kullaniciId = int.Parse(userIdClaim.Value);
+
+            var hizmet = _context.Hizmetler.FirstOrDefault(h => h.HizmetId == HizmetId);
+            if (hizmet == null)
+            {
+                return Json(new { success = false, message = "Seçilen hizmet bulunamadı." });
+            }
+
+            var calisan = _context.Calisanlar.FirstOrDefault(c => c.UzmanlikAlani == hizmet.HizmetAdi);
+            if (calisan == null)
+            {
+                return Json(new { success = false, message = "Bu hizmet için uygun çalışan bulunamadı." });
+            }
+
+            var randevuTarihiVeSaati = Tarih.Date.Add(Saat);
+
+            // Aynı çalışanın aynı tarih ve saatte herhangi bir hizmete randevusu olup olmadığını kontrol et
+            var mevcutRandevu = _context.Randevular
+                .Where(r => r.CalisanId == calisan.CalisanId && r.RandevuTarihi == randevuTarihiVeSaati)
+                .FirstOrDefault();
+
+            if (mevcutRandevu != null)
+            {
+                return Json(new
+                {
+                    success = false,
+                    message = $"Bu saatlerde {calisan.CalisanAdi} {calisan.CalisanSoyadi} başka bir randevuya sahiptir. Lütfen başka bir saat seçiniz."
+                });
+            }
+
+            var kullanici = _context.Kullanicilar.FirstOrDefault(k => k.KullaniciId == kullaniciId);
+            if (kullanici == null)
+            {
+                return Json(new { success = false, message = "Kullanıcı bilgileri alınamadı." });
+            }
+
+            var randevu = new Randevu
+            {
+                RandevuTarihi = randevuTarihiVeSaati,
+                RandevuSaati = randevuTarihiVeSaati,
+                IslemAdi = hizmet.HizmetAdi,
+                ucret = (double)hizmet.Ucret,
+                CalisanId = calisan.CalisanId,
+                KullaniciId = kullanici.KullaniciId,
+                HizmetId = hizmet.HizmetId
+            };
+
+            try
+            {
+                _context.Randevular.Add(randevu);
+                _context.SaveChanges();
+                return Json(new { success = true, message = "Randevunuz başarıyla oluşturuldu!" });
+            }
+            catch (DbUpdateException ex)
+            {
+                return Json(new { success = false, message = $"Randevu kaydedilirken bir hata oluştu: {ex.InnerException?.Message}" });
+            }
+        }
+
+
+
+
+
+
+        public IActionResult KullaniciRandevulari()
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Unauthorized("Kullanıcı oturum açmamış.");
+            }
+
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "UserId");
+            if (userIdClaim == null)
+            {
+                return Unauthorized("Kullanıcı kimlik bilgisi bulunamadı.");
+            }
+
+            var kullaniciId = int.Parse(userIdClaim.Value);
+
+            var randevular = _context.Randevular
+                .Where(r => r.KullaniciId == kullaniciId)
+                .Select(r => new
+                {
+                    r.IslemAdi,
+                    r.ucret,
+                    Tarih = r.RandevuTarihi.ToShortDateString(),
+                    Saat = r.RandevuTarihi.ToShortTimeString(),
+                    Calisan = r.Calisan.CalisanAdi + " " + r.Calisan.CalisanSoyadi
+                })
+                .ToList();
+
+            return View(randevular);
+        }
 
 
     }
+
 }

@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Meryem Duymuş\source\repos\KuaforSalonuProje\KuaforSalonuProje
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Meryem Duymuş/source/repos/KuaforSalonuProje/KuaforSalonuProje/Views/Account/KullaniciRandevulari.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxLdWxsYW5pY2lSYW5kZXZ1bGFyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Meryem Duymuş/source/repos/KuaforSalonuProje/KuaforSalonuProje/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,14 +48,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Meryem Duymuş/source/repos/KuaforSalonuProje/KuaforSalonuProje/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Meryem Duymuş/source/repos/KuaforSalonuProje/KuaforSalonuProje/Views/Admin/RandevuYönetimi.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dVnDtm5ldGltaS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Meryem Duymuş/source/repos/KuaforSalonuProje/KuaforSalonuProje/Views/AI/Consult.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQUlcQ29uc3VsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Meryem Duymuş/source/repos/KuaforSalonuProje/KuaforSalonuProje/Views/Home/Index.cshtml]

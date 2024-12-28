@@ -4,6 +4,7 @@ using KuaforSalonuProje.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforSalonuProje.Migrations
 {
     [DbContext(typeof(KuaforContext))]
-    partial class KuaforContextModelSnapshot : ModelSnapshot
+    [Migration("20241227203305_hizmetler5")]
+    partial class hizmetler5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -112,9 +115,6 @@ namespace KuaforSalonuProje.Migrations
                     b.Property<int>("CalisanId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("CalisanId1")
-                        .HasColumnType("int");
-
                     b.Property<int>("HizmetId")
                         .HasColumnType("int");
 
@@ -137,8 +137,6 @@ namespace KuaforSalonuProje.Migrations
                     b.HasKey("RandevuId");
 
                     b.HasIndex("CalisanId");
-
-                    b.HasIndex("CalisanId1");
 
                     b.HasIndex("HizmetId");
 
@@ -183,14 +181,10 @@ namespace KuaforSalonuProje.Migrations
             modelBuilder.Entity("KuaforSalonuProje.Models.Randevu", b =>
                 {
                     b.HasOne("KuaforSalonuProje.Models.Calisan", "Calisan")
-                        .WithMany()
-                        .HasForeignKey("CalisanId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("KuaforSalonuProje.Models.Calisan", null)
                         .WithMany("Randevular")
-                        .HasForeignKey("CalisanId1");
+                        .HasForeignKey("CalisanId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("KuaforSalonuProje.Models.Hizmet", "Hizmet")
                         .WithMany("Randevular")
@@ -201,7 +195,7 @@ namespace KuaforSalonuProje.Migrations
                     b.HasOne("Kullanici", "Kullanici")
                         .WithMany()
                         .HasForeignKey("KullaniciId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Calisan");
