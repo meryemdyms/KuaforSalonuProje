@@ -110,7 +110,7 @@ namespace KuaforSalonuProje.Controllers
             ViewBag.Error = "Kullanıcı adı veya şifre hatalı.";
             return View();
         }
-        [HttpGet]
+        
         [HttpGet]
         public IActionResult Welcome()
         {
@@ -136,7 +136,8 @@ namespace KuaforSalonuProje.Controllers
                     r.ucret,
                     Tarih = r.RandevuTarihi.ToShortDateString(),
                     Saat = r.RandevuTarihi.ToShortTimeString(),
-                    Calisan = r.Calisan.CalisanAdi + " " + r.Calisan.CalisanSoyadi
+                    Calisan = r.Calisan.CalisanAdi + " " + r.Calisan.CalisanSoyadi,
+                    r.Durum // Durum Bilgisi Dahil Edildi
                 })
                 .ToList<dynamic>();
 
@@ -228,7 +229,8 @@ namespace KuaforSalonuProje.Controllers
                 ucret = (double)hizmet.Ucret,
                 CalisanId = calisan.CalisanId,
                 KullaniciId = kullanici.KullaniciId,
-                HizmetId = hizmet.HizmetId
+                HizmetId = hizmet.HizmetId,
+               
             };
 
             try

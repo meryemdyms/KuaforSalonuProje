@@ -175,6 +175,7 @@
                                 <th>Tarih</th>
                                 <th>Saat</th>
                                 <th>Çalışan</th>
+                                <th>Durum</th> <!-- Durum Sütunu Eklendi -->
                             </tr>
                         </thead>
                         <tbody>
@@ -188,19 +189,21 @@
                                         <td>@randevu.Tarih</td>
                                         <td>@randevu.Saat</td>
                                         <td>@randevu.Calisan</td>
+                                        <td>@randevu.Durum</td> <!-- Durum Değeri Gösteriliyor -->
                                     </tr>
                                 }
                             }
                             else
                             {
                                 <tr>
-                                    <td colspan="5" class="text-center">Henüz randevunuz bulunmamaktadır.</td>
+                                    <td colspan="6" class="text-center">Henüz randevunuz bulunmamaktadır.</td>
                                 </tr>
                             }
                         </tbody>
                     </table>
                 </div>
             </div>
+
 
             <!-- Hizmetler -->
             <div id="hizmetler" class="card">

@@ -26,5 +26,8 @@ namespace KuaforSalonuProje.Models
         public int HizmetId { get; set; }
         public virtual Hizmet Hizmet { get; set; }
 
+        // Yeni eklenen Durum alanı
+        public string Durum { get; set; } = "Onay Bekliyor"; // Varsayılan olarak "Onay Bekliyor"
+
     }
 }

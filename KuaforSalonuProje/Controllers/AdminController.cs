@@ -18,10 +18,21 @@ namespace KuaforSalonuProje.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            // Çalışanların listesini veritabanından al
+            // Randevuların tüm ilişkili verilerle birlikte alınması
+            var randevular = _context.Randevular
+                .Include(r => r.Calisan)
+                .Include(r => r.Kullanici)
+                .Include(r => r.Hizmet)
+                .ToList();
+
+            // Randevuları ViewBag'e ekliyoruz
+            ViewBag.Randevular = randevular;
+
+            // Çalışanları model olarak gönderiyoruz
             var calisanlar = _context.Calisanlar.ToList();
             return View(calisanlar);
         }
+
 
         // Yeni Çalışan Ekleme İşlemi
         [HttpPost]
@@ -67,17 +78,36 @@ namespace KuaforSalonuProje.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult RandevuYönetimi()
+        [HttpPost]
+        public IActionResult RandevuOnayla(int id)
         {
-            
-            return View();
+            var randevu = _context.Randevular.FirstOrDefault(r => r.RandevuId == id);
+            if (randevu != null)
+            {
+                randevu.Durum = "Onaylandı";
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("Index", "Admin");
         }
 
-        public IActionResult RandevuYoneticisi()
+        [HttpPost]
+        public IActionResult RandevuSil(int id)
         {
-            var randevular = _context.Randevular.ToList();
-            return View(randevular);
+            var randevu = _context.Randevular.FirstOrDefault(r => r.RandevuId == id);
+            if (randevu != null)
+            {
+                randevu.Durum = "İptal Edildi"; // Durum değiştirilebilir
+                _context.Randevular.Remove(randevu); // Eğer tamamen silmek istiyorsanız
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("Index", "Admin");
         }
+
+
+
+
 
 
     }
